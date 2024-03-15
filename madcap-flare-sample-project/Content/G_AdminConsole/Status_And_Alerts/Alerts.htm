@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_OnPrem_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Administrator|Printer Deployment">
+    <script src="https://use.fontawesome.com/343d1c540f.js">
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Alerts</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Printer_Installer_Standard_Table.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/backtotop.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.printerlogic.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="content">
+                                    <div id="contentBody">
+                                        <div class="row collapse">
+                                            <div class="sideContent">
+                                                <div class="clearfix">
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_OnPrem_TopicToolBar mc-component nocontent">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                            </button>
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="nocontent menu _Skins_OnPrem_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/PrinterInstaller__PrinterInstallerOnlineHelp.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                            <h1 class="Other_Topics">Alerts</h1>
+                                            <!-- Tab links -->
+                                            <div class="tab">
+                                                <button class="tablinks active" onclick="openCity(event, 'Summary')" id="defaultOpen">Summary</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Faqs')">FAQs</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Default')">Default Setup</button>
+                                                <button class="tablinks" onclick="openCity(event, 'PS')">Printer-specific Setup</button>
+                                            </div>
+                                            <!-- Tab content -->
+                                            <!-- Summary Tab -->
+                                            <div id="Summary" class="tabcontent" style="display:block">
+                                                <p>Printing issues happen frequently. A printer can run out of toner or paper, a misaligned paper can cause a paper jam, people don't always close the paper tray, and many other types of issues can arise that prevent your printer from working correctly.</p>
+                                                <p>How often have you printed a document, and you walk to the printer only to see that your document has not been printed? Some printers will provide a digital message that notifies you of an issue, such as "Out of Paper" or "Paper Tray Missing." However, other printers might not have these types of notifications on the device.</p>
+                                                <div class="ImagesFloatLeft">
+                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alert_Sample_Notification.png"><img class="MCPopupThumbnail img" data-mc-width="792" data-mc-height="428" src="../../Images/OnPrem/AC_Alert_Sample_Notification_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                    </div>
+                                                    <div>
+                                                        <figcaption>Alert Email</figcaption>
+                                                    </div>
+                                                </div>
+                                                <p><span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> alerts proactively notify one or more individuals of issues with the printer or submit help desk tickets if there are issues with the printer. For example, let's say the IT Manager assigns a subordinate to keep printers up and running at all times. </p>
+                                                <p>Rather than stopping by the printers every day to check on paper and toner, or waiting for someone to complain that the printer isn't working, that subordinate's job would be much easier with email notifications that identify not only that there is an issue with the printer, but also the type of issue. A notification is sent via email and appears as shown in the image here.</p>
+                                                <p>When you set up an alert (from the Alert tab), you must enable SNMP Status Monitoring, enable Email Alerts, and then configure LDAP settings, IMAP settings, and SMTP settings. You can quickly give a name to the alert, set the "triggers" that will set off the alert, and select the person who will receive the notification. When the error is triggered, the user who has been assigned to receive the notification will get an email that something is wrong and needs to be fixed.</p>
+                                                <div class="ImagesFloatRight">
+                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alert_Recovery_Sample_Notification.png"><img class="MCPopupThumbnail img" data-mc-width="745" data-mc-height="500" src="../../Images/OnPrem/AC_Alert_Recovery_Sample_Notification_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                    </div>
+                                                    <div>
+                                                        <figcaption>Recovery Email</figcaption>
+                                                    </div>
+                                                </div>
+                                                <p>In the sample image, take note of the Printer Error Condition(s) field that identifies the specific issues with the printer, namely the input tray is missing and empty, and that the printer is overdue for preventive maintenance. Similarly, <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> also provides notifications for error resolution. These types of notifications are called Recovery Messages and appear as shown to the right.</p>
+                                                <p><span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> uses SNMP to connect to the printer to see if it is available and can be reached. Alerts can be set up so that anyone with a user account in the system can receive the notification. Better yet, a user does not even need to be an administrator to receive the notification. Furthermore, you can set up a printer to use the global settings, or you can configure the printer to use settings that are specific to that printer. The global settings are located in <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> by clicking <span class="Emphasis">Tools</span> &gt;&#160;<span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>.</p>
+                                                <hr />
+                                                <div>
+                                                    <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>You cannot apply the same trigger to multiple alerts for the same printer. For example, let's say you set up Alert A and Alert B for your HP color printer object in the tree view. Alert A is configured to send an email to John Smith in the event of low paper or no paper. You also configure Alert B to send an email to Jack Jones in the event of low paper or no toner. In this case, the low paper is assigned to both alerts, which is not allowed. <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> would send the alert to the first of the two alerts in the list of alerts. The workaround for such an issue is to apply both users to the same alert with low paper as the trigger. For example, create Alert C with low paper as the trigger, and alerts to be sent to both John Smith and Jack Jones.<br /></p>
+                                                </div>
+                                            </div>
+                                            <!-- FAQS Tab -->
+                                            <div id="Faqs" class="tabcontent" style="display:block">
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What are the different types of alerts?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <div>
+                                                            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>Printer manufacturers configure error standards, which means that one manufacturer may set a specific trigger (such as low paper) to discharge at a certain level while a different manufacturer may set the same trigger to discharge at a different level.<br /></p>
+                                                        </div>
+                                                        <p>The following table provides descriptions for each alert type.</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Printer_Installer_Standard_Table.css');margin-left: 0;margin-right: auto;" class="TableStyle-Printer_Installer_Standard_Table" cellspacing="0">
+                                                            <col class="TableStyle-Printer_Installer_Standard_Table-Column-Column1" style="width: 2.75in;" />
+                                                            <col class="TableStyle-Printer_Installer_Standard_Table-Column-Column1" style="width: 410px;" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Head-Header1">
+                                                                    <th class="TableStyle-Printer_Installer_Standard_Table-HeadE-Column1-Header1">Trigger Name</th>
+                                                                    <th class="TableStyle-Printer_Installer_Standard_Table-HeadD-Column1-Header1">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Select All</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">Uses all available triggers to detect an issue rather than having to select each trigger individually.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">ICMP Host Unreachable</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">Instances in which the printer host cannot be reached on the network. In other words, the ICMP "ping" is unreachable.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Service Requested</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">Printer-specific trigger that can be added when any error is thrown to identify that printer service is required.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Overdue Preventive Maintenance</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The point at which the printer has reached a default timeframe or usage point at which the printer is set to have maintenance done as a means of preventing future failure.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Low Paper</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The printer has reached the point at which it is nearly running out of paper. Each printer has a different standard for low paper. For example, a printer with a 20,000 paper capacity may set the low paper standard for 500, while a printer with a 200 paper capacity may set the low paper standard to 50.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">No Paper</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The printer has run out of paper, which needs to be added in order to continue printing processes.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Low Toner</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The printer is low on toner, which needs to be replaced in order to continue printing processes.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">No Toner</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The printer has run out of toner, which needs to be replaced in order to continue printing processes.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Input Tray Missing</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The tray that feeds paper to the printer has been removed from the printer and must be replaced before the printer can continue printing processes.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Output Tray Missing</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The tray that "catches" paper after printing has been removed from the printer and must be replaced before the printer can continue printing processes.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Marker Supply Missing</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The printer ink levels are low and need to be replaced as soon as possible.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Output Nearly Full</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The output tray has almost reached max capacity and needs to be emptied as soon as possible.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Output Full</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The output tray has reached max capacity and needs to be emptied as soon as possible.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Input Tray Empty</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">The tray used as the paper input source (other than the main tray) for print jobs outside of the main print configuration size (8x11 or otherwise) needs to be filled as soon as possible.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Jammed</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">A paper jam in the printer has occurred, and you need to remove the jammed paper before the printing process can continue.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1">Door Open</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1">Depending on the printer, one or more of the doors has been left open on the printer and must be closed before the printing process can continue.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Printer_Installer_Standard_Table-Body-Body1">
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyB-Column1-Body1">Other</td>
+                                                                    <td class="TableStyle-Printer_Installer_Standard_Table-BodyA-Column1-Body1">Option used to define a printing condition that is not met by the other conditions in this table.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the Community name?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <div class="ImagesFloatLeft">
+                                                            <p>
+                                                                <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Community_Name.png"><img class="MCPopupThumbnail img" data-mc-width="1166" data-mc-height="523" src="../../Images/OnPrem/AC_General_Settings_Community_Name_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                                </div>
+                                                                <div>
+                                                                    <figcaption>Community Name Setting</figcaption>
+                                                                </div>
+                                                            </p>
+                                                        </div>
+                                                        <p>SNMP requires a community name to communicate with the printer and is similar to a password. A printer generally has two community names - one for read-only access and the other for administrative use. The read-only community name defaults to "public" and is the one that you should use to enable communication between server and printer. The administrative name is printer-dependent and is disabled by default. An incorrect community name will prevent communication with the printer via SNMP.</p>
+                                                        <p>You can set the community name at the global level by clicking <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span> if you are using the global settings as shown here. Either way, the community name in the application must match the community name given to the printer. If you do not know the community name given to the printer, see your printer manufacturer for more information.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the difference between SNMP v1/v2 and v3?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <p>SNMP versions 1 and 2 do not have security settings, which means that a person can query the SNMP information without any encryption or authentication. Version 3 has both encryption and authentication security options. Additionally, you can set the version 3 level to require both encryption and authentication, authentication only, or neither encryption nor authentication.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the Alert Association Type?</a><a name="Alert_Association"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <p>When you create an alert, you will see a column called Alert Association Type on the far right side as shown below.</p>
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alert_Association.png"><img class="MCPopupThumbnail img" data-mc-width="990" data-mc-height="591" src="../../Images/OnPrem/AC_Alert_Association_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                        <p>This field identifies the level in the tree view at which the alert was added, and displays one of two different options.</p>
+                                                        <p><span class="Emphasis">Inherited</span> means that a printer object has taken on (or inherited) an alert that is set in the printer object's parent folder.</p>
+                                                        <p>Consider the following example. The tree view has a folder called Floor 34, and within that folder are three printer objects. If the Floor 34 folder has an alert set to it, then each of the printer objects in that folder will inherit that same alert.</p>
+                                                        <p><span class="Emphasis">Explicit</span> means the printer object has not inherited any alerts from a parent folder.</p>
+                                                        <p>Using the example from above, let's say the Floor 34 folder does not have any alerts assigned to it. In this case, the three printer objects in the folder are not inheriting any alerts, so any alerts you assign directly to the printer objects will be explicit.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Default Tab -->
+                                            <div id="Default" class="tabcontent" style="display:block">
+                                                <div class="Jump_To_Step ">
+                                                    <p>Jump to a Step:</p>
+                                                    <div class="indent">
+                                                        <p><a href="#Default_Step1">Step 1: Set up an LDAP Domain</a>
+                                                        </p>
+                                                        <p><a href="#Default_Step2">Step 2: Enable and Configure Email Alerts</a>
+                                                        </p>
+                                                        <p><a href="#Default_Step3">Step 3: Configure Outgoing Email Settings (SMTP)</a>
+                                                        </p>
+                                                        <p><a href="#Default_Step4">Step 4: Enable and Configure Default SNMP&#160;Status Monitoring</a>
+                                                        </p>
+                                                        <p><a href="#Default_Step5">Step 5: Set Status Monitoring Alerts to Use Default Settings</a>
+                                                        </p>
+                                                        <p><a href="#Default_Step6">Step 6: Create a New Alert</a>
+                                                        </p>
+                                                        <p><a href="#Default_Step7">Conclusion</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step1"></a>Step 1: Set up an LDAP Domain</h3>
+                                                <div class="IndentStep">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tools_Settings_General.png"><img class="MCPopupThumbnail img" data-mc-width="1086" data-mc-height="559" src="../../Images/OnPrem/AC_Tools_Settings_General_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="2">Navigate to the LDAP&#160;Authentication Settings section.</li>
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tools_Settings_General_LDAP.png"><img class="MCPopupThumbnail img" data-mc-width="1275" data-mc-height="643" src="../../Images/OnPrem/AC_Tools_Settings_General_LDAP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">When the LDAP settings appear, fill in the required fields.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tools_Settings_General_LDAPSettings.png"><img class="MCPopupThumbnail img" data-mc-width="664" data-mc-height="510" src="../../Images/OnPrem/AC_Tools_Settings_General_LDAPSettings_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="StepsParagraph">For core features such as driver management, printer deployment, Role-based Access Control, and reporting, fill in the Domain Name and Primary LDAP server fields. The NETBIOS domain name and Base DN fields should fill in automatically. For both advanced modules (pull printing and mobile printing), fill in the entire top section down to the LDAP port field. Also fill in the Domain Alias, Bind User, and Bind Password fields. Make sure the LDAP Email Attributes are separated by commas. If you think you might need to use the SSO fields, please contact your PrinterLogic Customer Support Manager.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">When you have finished entering the LDAP settings, click <span class="Emphasis">Test Settings</span> to ensure the settings are correct.</li>
+                                                        <li value="6">Click <span class="Emphasis">Apply</span>.</li>
+                                                        <li value="7">(Optional) In the Default domain when logging in field, select the LDAP domain you have created.</li>
+                                                        <li value="8">Click <span class="Emphasis">Enable Advanced LDAP administrative authentication</span>.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">When you click this option, the LDAP Group/User option becomes available in the Users section of the Admin Console as shown below.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Users_Add_User_LDAP.png"><img class="MCPopupThumbnail img" data-mc-width="1091" data-mc-height="578" src="../../Images/OnPrem/AC_Users_Add_User_LDAP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step2"></a>Step 2: Enable and Configure Email Alerts</h3>
+                                                <div class="IndentStep">
+                                                    <ol start="1">
+                                                        <li value="1">In <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>, navigate to the SNMP Alerts section and click <span class="Emphasis">Enable e-mail alerts</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Enable_Alerts.png"><img class="MCPopupThumbnail img" data-mc-width="1190" data-mc-height="252" src="../../Images/OnPrem/AC_General_Settings_Enable_Alerts_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="2">In the <span class="Emphasis">By default, SNMP monitoring for each printer is:</span> section, click <span class="Emphasis">On</span>.</li>
+                                                        <li value="3" data-mc-conditions="General.NoHosted">(Optional) In the <span class="Emphasis">When a potential problem is detected:</span> field, select the number of times an alert will be "seen" before an alert is sent to the recipient.</li>
+                                                        <li value="4">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step3"></a>Step 3: Configure Outgoing Email (SMTP) Settings</h3>
+                                                <div class="IndentStep">
+                                                    <ol start="1">
+                                                        <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>.</li>
+                                                        <li value="2">Navigate to the Email (SMTP) Settings section.</li>
+                                                        <li value="3">In the "From" Address field, type an email address.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_SMTP_Settings.png"><img class="MCPopupThumbnail img" data-mc-width="1172" data-mc-height="730" src="../../Images/OnPrem/AC_General_Settings_SMTP_Settings_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent"><a href="../../A_CheatSheets/General_Settings_Cheat_Sheet.htm" class="MCXref xref">For more information, see General Settings Cheat Sheet.</a>
+                                                    </p>
+                                                    <p class="indent">Because the alert is sent via email, the email address entered into this field will appear in the email's "From" field of the alert as shown below.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alert_Notification_From_Field.png"><img class="MCPopupThumbnail img" data-mc-width="792" data-mc-height="428" src="../../Images/OnPrem/AC_Alert_Notification_From_Field_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Enter the server host information in the Server Host field.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_SMTP_Server_Host.png"><img class="MCPopupThumbnail img" data-mc-width="1203" data-mc-height="538" src="../../Images/OnPrem/AC_General_Settings_SMTP_Server_Host_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Enter the port in the Server Port field.</li>
+                                                        <li value="6">Enter the email address username.</li>
+                                                        <li value="7">Enter the email password.</li>
+                                                        <li value="8">Enter the type of security set for the email.</li>
+                                                        <li value="9">Click <span class="Emphasis">Save</span>.</li>
+                                                        <li value="10">Click <span class="Emphasis">Test SMTP Settings</span> to ensure the email settings entered are correct.</li>
+                                                    </ol>
+                                                    <p class="indent">Invalid SMTP settings will result in an error message, and valid SMTP settings will display the following window.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Test_SMTP.png"><img class="MCPopupThumbnail img" data-mc-width="432" data-mc-height="160" src="../../Images/OnPrem/AC_General_Settings_Test_SMTP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="11">Send a test email by entering in the email address of the person who will receive a test alert.</li>
+                                                        <li value="12">Click <span class="Emphasis">Yes</span>.</li>
+                                                        <li value="13">The person whose email address was entered in the box above will receive a simple confirmation email as shown below.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_SMTP_Confirmation_Email.png"><img class="MCPopupThumbnail img" data-mc-width="661" data-mc-height="327" src="../../Images/OnPrem/AC_SMTP_Confirmation_Email_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step4"></a>Step 4: Enable and Configure Default SNMP Status Monitoring</h3>
+                                                <div class="IndentStep">
+                                                    <ol start="1">
+                                                        <li value="1">Click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>.</li>
+                                                        <li value="2">In the SNMP Status Monitoring section, click <span class="Emphasis">Enable SNMP Status Monitoring</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Enable_Snmp_Status.png"><img class="MCPopupThumbnail img" data-mc-width="1087" data-mc-height="530" src="../../Images/OnPrem/AC_General_Settings_Enable_Snmp_Status_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">In the <span class="Emphasis">By default, SNMP monitoring for each printer is:</span> section, click <span class="Emphasis">On</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Snmp_Status_Default_On.png"><img class="MCPopupThumbnail img" data-mc-width="1087" data-mc-height="530" src="../../Images/OnPrem/AC_General_Settings_Snmp_Status_Default_On_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-conditions="General.NoHosted" data-mc-continue="true">
+                                                        <li value="4">Set the monitoring frequency of the printer under normal conditions and under error conditions.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent" data-mc-conditions="General.NoHosted">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_SNMP_Monitor_Frequency.png"><img class="MCPopupThumbnail img" data-mc-width="1203" data-mc-height="533" src="../../Images/OnPrem/AC_General_Settings_SNMP_Monitor_Frequency_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent" data-mc-conditions="General.NoHosted">The monitoring frequency is the time frame between printer status updates. Generally, the normal conditions are longer than the error conditions. Additionally, if an error occurs, the Admin Console has a setting that enables you to determine the number of times the status update will present an error before the alert is emailed to the recipient. The following image shows this setting.</p>
+                                                    <div class="ImgIndent" data-mc-conditions="General.NoHosted">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_SNMP_Detection.png"><img class="MCPopupThumbnail img" data-mc-width="1203" data-mc-height="246" src="../../Images/OnPrem/AC_General_Settings_SNMP_Detection_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Configure your SNMP settings in the SNMP v1/v2 section<MadCap:conditionalText data-mc-conditions="General.NoHosted"> or the SNMP v3 section</MadCap:conditionalText>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Snmp_Status.png"><img class="MCPopupThumbnail img" data-mc-width="1172" data-mc-height="730" src="../../Images/OnPrem/AC_General_Settings_Snmp_Status_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step5"></a>Step 5: Set Status Monitoring Alerts on a Printer Object to Use Default Settings</h3>
+                                                <div class="IndentStep">
+                                                    <ol data-mc-continue="true">
+                                                        <li value="1">Log in to the Admin Console.</li>
+                                                        <li value="2">In the tree view, select a printer object associated to the printer that will be sending alerts.</li>
+                                                    </ol>
+                                                    <p class="indent">The printer object you select cannot already be set up to be a pull print queue. What this means is that the printer object you select must have the <span class="Emphasis">Make Pull Printer</span> check box in the Printing tab deselected as shown below.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Printing_Tab_Pull_Printer_Off.png"><img class="MCPopupThumbnail img" data-mc-width="1232" data-mc-height="397" src="../../Images/OnPrem/AC_Printing_Tab_Pull_Printer_Off_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent">If you do not yet have any printer objects set up, select a folder in the tree view and then click <span class="Emphasis">New</span> &gt; <span class="Emphasis">TCP/IP Printer</span> to create a new printer object. For more information, see Add a New Printer Object to the Tree View.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click the Alerts tab.</li>
+                                                        <li value="4">Click <span class="Emphasis">Use Global</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Tab_Use_Global.png"><img class="MCPopupThumbnail img" data-mc-width="1203" data-mc-height="364" src="../../Images/OnPrem/AC_Alerts_Tab_Use_Global_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Click <span class="Emphasis">Save</span>.</li>
+                                                        <li value="6">Click the Status tab.</li>
+                                                        <li value="7">Click <span class="Emphasis">Use Global</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Status_Tab_Use_Global.png"><img class="MCPopupThumbnail img" data-mc-width="1146" data-mc-height="621" src="../../Images/OnPrem/AC_Status_Tab_Use_Global_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="8">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step6"></a>Step 6: Create a New Alert</h3>
+                                                <div class="IndentStep">
+                                                    <ol start="1">
+                                                        <li value="1">Click <span class="Emphasis">Return to tree view</span>.</li>
+                                                        <li value="2">In the Alerts tab, click <span class="Emphasis">Add</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Tab_Add.png"><img class="MCPopupThumbnail img" data-mc-width="1172" data-mc-height="640" src="../../Images/OnPrem/AC_Alerts_Tab_Add_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">In the Add SNMP Alerts window, type a name for the alert.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Add.png"><img class="MCPopupThumbnail img" data-mc-width="857" data-mc-height="617" src="../../Images/OnPrem/AC_Alerts_Add_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Select the triggers for which an alert will be sent.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Tab_Triggers.png"><img class="MCPopupThumbnail img" data-mc-width="857" data-mc-height="617" src="../../Images/OnPrem/AC_Alerts_Tab_Triggers_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent">The recommended best practice is to group related triggers together. For example, you can create a "Paper" alert and then select <span class="EmphasisTip">Low Paper</span> and <span class="EmphasisTip">No Paper</span> as the triggers because they are both related to paper issues.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Select the user(s) who will be notified via email.</li>
+                                                    </ol>
+                                                    <p class="indent">If you have not set up users to add to an alert, you must set them up before proceeding. To set up a user, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Users</span>, and then click <span class="Emphasis">Add User</span>.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Users_Add_User_Button.png"><img class="MCPopupThumbnail img" data-mc-width="1063" data-mc-height="796" src="../../Images/OnPrem/AC_Users_Add_User_Button_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">Click the right-arrow to move the selected user(s) into the right column, which registers those users to receive this alert for this printer.</li>
+                                                        <li value="7">Click <span class="Emphasis">OK</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The new alert will appear in the Alerts tab.</p>
+                                                </div>
+                                                <h3 class="Blue"><a name="Default_Step7"></a>Conclusion </h3>
+                                                <div class="IndentStep">
+                                                    <p data-mc-conditions="General.NoHosted">After you have configured the settings and created your alert, then <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> will immediately begin monitoring the printer using the frequency settings in <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt;&#160;<span class="Emphasis">General</span> under SNMP Status Monitoring. Under normal conditions, <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> monitors the printer every five minutes. If the printer triggers an error, then <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> monitors the printer every ten seconds and sends an email after the alert is returned five times (by default). All of these settings can be changed.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Printer-Specific Tab -->
+                                            <div id="PS" class="tabcontent" style="display:block">
+                                                <div class="Jump_To_Step ">
+                                                    <p>Jump to a Step:</p>
+                                                    <div class="indent">
+                                                        <p><a href="#PS_Step1">Step 1: Set up an LDAP Domain</a>
+                                                        </p>
+                                                        <p><a href="#PS_Step2">Step 2: Configure Outgoing Email (SMTP) Settings</a>
+                                                        </p>
+                                                        <p><a href="#PS_Step3">Step 3: Configure Status Monitoring Alerts to use Printer-specific Settings</a>
+                                                        </p>
+                                                        <p><a href="#PS_Step4">Step 4: Create a New Alert</a>
+                                                        </p>
+                                                        <p><a href="#PS_Conclusion">Conclusion</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="PS_Step1"></a>Step 1: Set up an LDAP Domain</h3>
+                                                <div class="IndentStep">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tools_Settings_General.png"><img class="MCPopupThumbnail img" data-mc-width="1086" data-mc-height="559" src="../../Images/OnPrem/AC_Tools_Settings_General_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="2">Navigate to the LDAP&#160;Authentication Settings section.</li>
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tools_Settings_General_LDAP.png"><img class="MCPopupThumbnail img" data-mc-width="1275" data-mc-height="643" src="../../Images/OnPrem/AC_Tools_Settings_General_LDAP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">When the LDAP settings appear, fill in the required fields.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tools_Settings_General_LDAPSettings.png"><img class="MCPopupThumbnail img" data-mc-width="664" data-mc-height="510" src="../../Images/OnPrem/AC_Tools_Settings_General_LDAPSettings_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="StepsParagraph">For core features such as driver management, printer deployment, Role-based Access Control, and reporting, fill in the Domain Name and Primary LDAP server fields. The NETBIOS domain name and Base DN fields should fill in automatically. For both advanced modules (pull printing and mobile printing), fill in the entire top section down to the LDAP port field. Also fill in the Domain Alias, Bind User, and Bind Password fields. Make sure the LDAP Email Attributes are separated by commas. If you think you might need to use the SSO fields, please contact your PrinterLogic Customer Support Manager.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">When you have finished entering the LDAP settings, click <span class="Emphasis">Test Settings</span> to ensure the settings are correct.</li>
+                                                        <li value="6">Click <span class="Emphasis">Apply</span>.</li>
+                                                        <li value="7">(Optional) In the Default domain when logging in field, select the LDAP domain you have created.</li>
+                                                        <li value="8">Click <span class="Emphasis">Enable Advanced LDAP administrative authentication</span>.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">When you click this option, the LDAP Group/User option becomes available in the Users section of the Admin Console as shown below.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Users_Add_User_LDAP.png"><img class="MCPopupThumbnail img" data-mc-width="1091" data-mc-height="578" src="../../Images/OnPrem/AC_Users_Add_User_LDAP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="PS_Step2"></a>Step 2: Configure Outgoing Email (SMTP) Settings</h3>
+                                                <div class="IndentStep">
+                                                    <ol start="1">
+                                                        <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">General</span>.</li>
+                                                        <li value="2">Navigate to the Email (SMTP) Settings section.</li>
+                                                        <li value="3">In the "From" Address field, type an email address.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_SMTP_Settings.png"><img class="MCPopupThumbnail img" data-mc-width="1172" data-mc-height="730" src="../../Images/OnPrem/AC_General_Settings_SMTP_Settings_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent"><a href="../../A_CheatSheets/General_Settings_Cheat_Sheet.htm" class="MCXref xref">For more information, see General Settings Cheat Sheet.</a>
+                                                    </p>
+                                                    <p class="indent">Because the alert is sent via email, the email address entered into this field will appear in the email's "From" field of the alert as shown below.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alert_Notification_From_Field.png"><img class="MCPopupThumbnail img" data-mc-width="792" data-mc-height="428" src="../../Images/OnPrem/AC_Alert_Notification_From_Field_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Enter the server host information in the Server Host field.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_SMTP_Server_Host.png"><img class="MCPopupThumbnail img" data-mc-width="1203" data-mc-height="538" src="../../Images/OnPrem/AC_General_Settings_SMTP_Server_Host_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Enter the port in the Server Port field.</li>
+                                                        <li value="6">Enter the email address username.</li>
+                                                        <li value="7">Enter the email password.</li>
+                                                        <li value="8">Enter the type of security set for the email.</li>
+                                                        <li value="9">Click <span class="Emphasis">Save</span>.</li>
+                                                        <li value="10">Click <span class="Emphasis">Test SMTP Settings</span> to ensure the email settings entered are correct.</li>
+                                                    </ol>
+                                                    <p class="indent">Invalid SMTP settings will result in an error message, and valid SMTP settings will display the following window.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Settings_Test_SMTP.png"><img class="MCPopupThumbnail img" data-mc-width="432" data-mc-height="160" src="../../Images/OnPrem/AC_General_Settings_Test_SMTP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="11">Send a test email by entering in the email address of the person who will receive a test alert.</li>
+                                                        <li value="12">Click <span class="Emphasis">Yes</span>.</li>
+                                                        <li value="13">The person whose email address was entered in the box above will receive a simple confirmation email as shown below.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_SMTP_Confirmation_Email.png"><img class="MCPopupThumbnail img" data-mc-width="661" data-mc-height="327" src="../../Images/OnPrem/AC_SMTP_Confirmation_Email_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="PS_Step3"></a>Step 3: Configure Status Monitoring Alerts to use Printer-specific Settings</h3>
+                                                <div class="IndentStep">
+                                                    <ol data-mc-continue="true">
+                                                        <li value="1">Log in to the Admin Console.</li>
+                                                        <li value="2">In the tree view, select a printer object associated to the printer that will be sending alerts.</li>
+                                                    </ol>
+                                                    <p class="indent">The printer object you select cannot already be set up to be a pull print queue. What this means is that the printer object you select must have the <span class="Emphasis">Make Pull Printer</span> check box in the Printing tab deselected as shown below.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Printing_Tab_Pull_Printer_Off.png"><img class="MCPopupThumbnail img" data-mc-width="1232" data-mc-height="397" src="../../Images/OnPrem/AC_Printing_Tab_Pull_Printer_Off_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent">If you do not yet have any printer objects set up, select a folder in the tree view and then click <span class="Emphasis">New</span> &gt; <span class="Emphasis">TCP/IP Printer</span> to create a new printer object. For more information, see Add a New Printer Object to the Tree View.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click the Alerts tab.</li>
+                                                        <li value="4">Click <span class="Emphasis">Use Global</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Tab_Use_Global.png"><img class="MCPopupThumbnail img" data-mc-width="1203" data-mc-height="364" src="../../Images/OnPrem/AC_Alerts_Tab_Use_Global_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Click <span class="Emphasis">Save</span>.</li>
+                                                        <li value="6">Click the Status tab.</li>
+                                                        <li value="7">Click <span class="Emphasis">Use Global</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Status_Tab_Use_Global.png"><img class="MCPopupThumbnail img" data-mc-width="1146" data-mc-height="621" src="../../Images/OnPrem/AC_Status_Tab_Use_Global_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="8">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="PS_Step4"></a>Step 4: Create a New Alert</h3>
+                                                <div class="IndentStep">
+                                                    <ol start="1">
+                                                        <li value="1">Click <span class="Emphasis">Return to tree view</span>.</li>
+                                                        <li value="2">In the Alerts tab, click <span class="Emphasis">Add</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Tab_Add.png"><img class="MCPopupThumbnail img" data-mc-width="1172" data-mc-height="640" src="../../Images/OnPrem/AC_Alerts_Tab_Add_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">In the Add SNMP Alerts window, type a name for the alert.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Add.png"><img class="MCPopupThumbnail img" data-mc-width="857" data-mc-height="617" src="../../Images/OnPrem/AC_Alerts_Add_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Select the triggers for which an alert will be sent.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Alerts_Tab_Triggers.png"><img class="MCPopupThumbnail img" data-mc-width="857" data-mc-height="617" src="../../Images/OnPrem/AC_Alerts_Tab_Triggers_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="indent">The recommended best practice is to group related triggers together. For example, you can create a "Paper" alert and then select <span class="EmphasisTip">Low Paper</span> and <span class="EmphasisTip">No Paper</span> as the triggers because they are both related to paper issues.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Select the user(s) who will be notified via email.</li>
+                                                    </ol>
+                                                    <p class="indent">If you have not set up users to add to an alert, you must set them up before proceeding. To set up a user, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Users</span>, and then click <span class="Emphasis">Add User</span>.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Users_Add_User_Button.png"><img class="MCPopupThumbnail img" data-mc-width="1063" data-mc-height="796" src="../../Images/OnPrem/AC_Users_Add_User_Button_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">Click the right-arrow to move the selected user(s) into the right column, which registers those users to receive this alert for this printer.</li>
+                                                        <li value="7">Click <span class="Emphasis">OK</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The new alert will appear in the Alerts tab.</p>
+                                                </div>
+                                                <h3 class="Blue"><a name="PS_Conclusion"></a>Conclusion</h3>
+                                                <div class="IndentStep">
+                                                    <p data-mc-conditions="General.NoHosted">After you have configured the settings and created your alert, then <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> will immediately begin monitoring the printer using the frequency settings in <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt;&#160;<span class="Emphasis">General</span> under SNMP Status Monitoring. Under normal conditions, <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> monitors the printer every five minutes. If the printer triggers an error, then <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> monitors the printer every ten seconds and sends an email after the alert is returned five times (by default). All of these settings can be changed.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Mobile_Footer">
+                                    <p class="Mobile_Footer">Return to printerlogic.com</p>
+                                </div>
+                                <div class="backToTop">Back to Top</div>
+                                <script>
+			$(document).ready(function(){
+			
+			/*<![CDATA[*/
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			/*]]>*/
+
+
+			//on scroll, show the back to top button
+			$(window).scroll(function(){
+			if($(window).scrollTop() &gt;= 1){ //if user has scrolled the window
+			$('.backToTop').fadeIn(500); // show the back to top button
+			}else { // else if user is at the top already
+			$('.backToTop').fadeOut(500); //hide the back to top button
+			}
+			});
+
+			//scroll the page to the top if user clicks on the back to top button
+			$('.backToTop').click(function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+
+			//checks if page was already scrolled down before load
+			if($(window).scrollTop() &gt;= 1){
+			$('.backToTop').show(); // show the back to top button
+			}
+			
+		</script>
+                                <script>/*<![CDATA[*/function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}/*]]>*/</script>
+                                <script>/*<![CDATA[*/// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();/*]]>*/</script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+    <div class="Footer_Upper">
+        <div class="Top_Footer">
+            <div>
+                <p class="footerhead"><b>Printer</b>Logic</p>
+                <p class="footertext">Thousands of enterprises use PrinterLogic's patent pending printer and driver management platform to deliver Mobile, Pull and Virtual printing, while eliminating print servers and providing a self-service portal that empowers end users to install their own printers.</p>
+            </div>
+            <div>
+                <p class="footerhead">About Us</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Contact Us</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/news-releases/" target="_blank" class="FooterLinks">Newsroom</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/events/" class="FooterLinks" target="_blank">Events</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/careers/" target="_blank" class="FooterLinks">Careers</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Support</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/printer-installer/support/" target="_blank" class="FooterLinks">Technical</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Sales</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Partners</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partners/" target="_blank" class="FooterLinks">Our Partners</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partner-log-in/" target="_blank" class="FooterLinks">Partner Login</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/become-a-partner/" target="_blank" class="FooterLinks">Become a Partner</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Resource Center</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/" target="_blank" class="FooterLinks">Resource Center</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/blog/" target="_blank" class="FooterLinks">Blog</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/case-studies/" target="_blank" class="FooterLinks">Case Studies</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/white-papers/" target="_blank" class="FooterLinks">White Papers</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/videos/" target="_blank" class="FooterLinks">Videos</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/third-party-research/" target="_blank" class="FooterLinks">Third Party Research</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Footer_Lower">
+        <div class="Bottom_Footer">
+            <div>
+                <p class="footertext">PrinterLogic Global HQ</p>
+                <p class="footertext">912 West 1600 South</p>
+                <p class="footertext">St. George, Utah 84770</p>
+                <p class="footertext">USA</p>
+            </div>
+            <div>
+                <p class="footertext">PrinterLogic - Europe</p>
+                <p class="footertext">PrinterLogic GmbH</p>
+                <p class="footertext">Otto-von-Guericke-Ring 7</p>
+                <p class="footertext">65205 Wiesbaden</p>
+                <p class="footertext">Germany</p>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/PrinterLogicEnterprisePrinting" target="_blank"><i class="fa fa-facebook-official fa-lg" style="color:#3b5998" aria-hidden="true"></i></a><a href="https://twitter.com/PrinterLogic" target="_blank"><i class="fa fa-twitter-square fa-lg" style="color:#00abec" aria-hidden="true"></i></a><a href="https://www.instagram.com/printerlogic/" target="_blank"><i class="fa fa-instagram fa-lg" style="color:#3f729b" aria-hidden="true"></i></a><a href="https://plus.google.com/+Printerlogic" target="_blank"><i class="fa fa-google-plus-square fa-lg" style="color:#dd4a38" aria-hidden="true"></i></a><a href="https://www.youtube.com/c/Printerlogic" target="_blank"><i class="fa fa-youtube-play fa-lg" style="color:#ba0000" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company-beta/3505000/" target="_blank"><i class="fa fa-linkedin-square fa-lg" style="color:#006e9e" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class="footertext">© 2017 PrinterLogic. All Rights Reserved</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/privacy-policy/" target="_blank" class="FooterLinks">Privacy</a> | <a href="https://www.printerlogic.com/sitemap/" target="_blank" class="FooterLinks">Sitemap</a></p>
+            </div>
+        </div>
+    </div>
+</html>

@@ -1,0 +1,692 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	name: PrinterLogic_Standard_Simple;
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #757477;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	max-id: 3;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #000000;
+	name: Column1;
+	id: 0;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	size: 20%;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 3px;
+	separator-color: #000000;
+	name: Header1;
+	id: 2;
+	font-size: 10pt;
+	font-family: 'Franklin Gothic Medium';
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	cell-padding-right: 10px;
+	cell-padding-left: 10px;
+	background-color: #cccccc;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #000000;
+	name: Body1;
+	id: 1;
+	font-size: 10pt;
+	font-family: 'Franklin Gothic Book';
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	cell-padding-left: 10px;
+	cell-padding-right: 10px;
+	color: #757477;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #000000;
+	name: Footer1;
+	id: 3;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-PrinterLogic_Standard_Simple
+{
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-color: #757477;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000000;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-Column-Column1
+{
+	width: 20%;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-Head-Header1
+{
+	
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadI-Column1-Header1
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadI-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadE-Column1-Header1
+{
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 3px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadE-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadF-Column1-Header1
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 3px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadF-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadH-Column1-Header1
+{
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadH-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadD-Column1-Header1
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 3px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadD-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadC-Column1-Header1
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadC-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadB-Column1-Header1
+{
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadB-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadA-Column1-Header1
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadA-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadG-Column1-Header1
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-HeadG-Column1-Header1 p
+{
+	font-style: normal;
+	color: #000000;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-Foot-Footer1
+{
+	
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootI-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootI-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootE-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-top-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootE-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootF-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-top-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootF-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootH-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootH-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootD-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-top-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootD-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootC-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootC-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootB-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootB-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootA-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootA-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootG-Column1-Footer1
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-FootG-Column1-Footer1 p
+{
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-Body-Body1
+{
+	
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyI-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyI-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyE-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyE-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyF-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyF-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyH-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyH-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyD-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyD-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyC-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyC-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyB-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: solid;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyB-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyA-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyA-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyG-Column1-Body1
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.TableStyle-PrinterLogic_Standard_Simple-BodyG-Column1-Body1 p
+{
+	color: #757477;
+	font-family: 'Franklin Gothic Book';
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+

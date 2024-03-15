@@ -1,0 +1,564 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	name: Printer_Installer_Standard_Table;
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #cccccc;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	max-id: 3;
+	background-color: #f2f2f2;
+	cell-padding-left: 2px;
+	cell-padding-right: 2px;
+	cell-padding-top: 2px;
+	cell-padding-bottom: 2px;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #cccccc;
+	name: Column1;
+	id: 0;
+	text-align: center;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #cccccc;
+	name: Header1;
+	id: 2;
+	background-color: #757477;
+	font-weight: normal;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #cccccc;
+	name: Body1;
+	id: 1;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #cccccc;
+	name: Footer1;
+	id: 3;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-Printer_Installer_Standard_Table
+{
+	border-collapse: collapse;
+	background-color: #f2f2f2;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: #cccccc;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	border-bottom-width: 1px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-Column-Column1
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-Head-Header1
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadI-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: normal;
+	background-color: #757477;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadI-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadE-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+	font-weight: normal;
+	background-color: #757477;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadE-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadF-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: normal;
+	background-color: #757477;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadF-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadH-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+	font-weight: normal;
+	background-color: #757477;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadH-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadD-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: normal;
+	background-color: #757477;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadD-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadC-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: normal;
+	background-color: #757477;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadC-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadB-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+	font-weight: normal;
+	background-color: #757477;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadB-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadA-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: normal;
+	background-color: #757477;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadA-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadG-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: normal;
+	background-color: #757477;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-HeadG-Column1-Header1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-Foot-Footer1
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootI-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootI-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootE-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+	border-top-width: 1px;
+	border-top-color: #cccccc;
+	border-top-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootE-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootF-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-top-width: 1px;
+	border-top-color: #cccccc;
+	border-top-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootF-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootH-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootH-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootD-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-top-width: 1px;
+	border-top-color: #cccccc;
+	border-top-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootD-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootC-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootC-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootB-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootB-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootA-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootA-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootG-Column1-Footer1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-FootG-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-Body-Body1
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyI-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyI-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyE-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyF-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyF-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyH-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyH-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyD-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyC-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyC-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyB-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+	border-right-style: solid;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyB-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyA-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyA-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyG-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.TableStyle-Printer_Installer_Standard_Table-BodyG-Column1-Body1 p
+{
+	
+}
+
+

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_OnPrem_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Administrator|Setup and Configuration">
+    <script src="https://use.fontawesome.com/343d1c540f.js">
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Backup and Restore</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/Scripts/backtotop.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.printerlogic.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="content">
+                                    <div id="contentBody">
+                                        <div class="row collapse">
+                                            <div class="sideContent">
+                                                <div class="clearfix">
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_OnPrem_TopicToolBar mc-component nocontent">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                            </button>
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="nocontent menu _Skins_OnPrem_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/PrinterInstaller__PrinterInstallerOnlineHelp.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                            <h1 class="Other_Topics">Backup and Restore</h1>
+                                            <h2>Back up the <span class="GeneralPrinterInstaller">Printer Installer</span> Database</h2>
+                                            <p class="StepsParagraph">Use any MySQL database backup software to back up the MySQL database. The following steps describe the process for backing up the Printer Installer database with the built-in 'mysqldump" command line.</p>
+                                            <div class="StepsIndent">
+                                                <ol>
+                                                    <li value="1">From the server running MySQL, click <span class="Emphasis">Start</span> and type <span class="Emphasis">CMD</span> to open a command prompt.</li>
+                                                    <li value="2">Right-click <span class="Emphasis">Command Prompt</span> and select <span class="Emphasis">Run as Administrator</span>.</li>
+                                                    <li value="3">Type <span class="Emphasis">cd c:\program files\mysql\MySQL Server 5.5\bin</span> to change directories.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_CMD_DBBackup.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="710" data-mc-height="340" src="../Images/OnPrem/WE_CMD_DBBackup_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="4">Type the following on a single line.</li>
+                                                </ol>
+                                                <p class="litextindent"> mysqldump --user=[DBUser] --password=[DBPassword] --single-transaction --add-drop-database --databases [DBName] &gt; C:\backup.sql</p>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_CMD_DBBackup_Dump.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1905" data-mc-height="594" src="../Images/OnPrem/WE_CMD_DBBackup_Dump_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                                <div class="noteindent">
+                                                    <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>The command shown above required the values for the following items: DBName, DBUser, and DBPassword. These values can be found at c:\inetpub\wwwroot\config\settings.php as shown in the following example. Keep in mind that you must remove the brackets surrounding DBName, DBUser, and DBPassword.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_SettingsPHP.png"><img class="MCPopupThumbnail img" data-mc-width="1360" data-mc-height="839" src="../Images/OnPrem/WE_SettingsPHP_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a><br />The backup file will be saved to the location designated in the script above. In this case, the backup file is saved as c:\backup\sql and will be used for restoring the database on a new server, if necessary.<br /></p>
+                                                </div>
+                                            </div>
+                                            <h2>Restore Printer Installer on a New Server</h2>
+                                            <h3 class="Steps">STEP 1: Install <span class="GeneralPrinterInstaller">Printer Installer</span> on a New Server</h3>
+                                            <div class="noteindent">
+                                                <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>If you have already performed the installation on the new server, skip Step 1 and move to the next step.<br /></p>
+                                            </div>
+                                            <div class="StepsIndent">
+                                                <p class="StepsIntroParagraph">Prior to the installation, you should have received an email with a link to the installation file you will use to download the installation files. If you have not received this email or link, please see your PrinterLogic sales representative. The following steps describe the process for installing <span class="GeneralPrinterInstaller">Printer Installer</span> on your Windows server.</p>
+                                                <ol>
+                                                    <li value="1">Open the installation email you received from your PrinterLogic sales representative.</li>
+                                                    <li value="2">Copy the link, which should appear as shown below.</li>
+                                                </ol>
+                                                <div class="Note_Step">
+                                                    <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>Do not copy and paste the link below. It is used here only as an example.<br /></p>
+                                                </div>
+                                                <p class="StepsParagraph">http://downloads.printerlogic.com/PrinterInstallerSetup.exe.</p>
+                                                <ol data-mc-continue="true">
+                                                    <li value="3">Log in to your Windows server.</li>
+                                                    <li value="4">Open a browser and paste the link you copied into the Address bar.</li>
+                                                    <li value="5">Press &lt;ENTER&gt; on your keyboard.</li>
+                                                    <li value="6">When the following window appears, click <span class="Emphasis">Save</span> to download the files to a folder on the server.</li>
+                                                </ol>
+                                                <div class="ImgIndent">
+                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/AC-SaveInstall.png"><img class="MCPopupThumbnail img" data-mc-width="960" data-mc-height="266" src="../Images/OnPrem/AC-SaveInstall_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                    </div>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="7">When the system finishes downloading the installation files, click <span class="Emphasis">Run</span>.</li>
+                                                    <li value="8">In the User Account Control window, click <span class="Emphasis">Yes</span> when the system asks you if you want to make changes to the computer.</li>
+                                                    <li value="9">Click <span class="Emphasis">Standard</span>.</li>
+                                                </ol>
+                                                <div class="ImgIndent">
+                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_PI_Wizard_Standard.png"><img class="MCPopupThumbnail img" data-mc-width="759" data-mc-height="542" src="../Images/OnPrem/WE_PI_Wizard_Standard_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                    </div>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="10">Click <span class="Emphasis">Next</span>.</li>
+                                                </ol>
+                                                <p class="StepsParagraph">The following option will appear only if you have more than one website set up in the IIS Manager on the server you are using for Printer&#160;Installer.</p>
+                                                <div class="ImgIndent">
+                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_PI_Wizard_MultipleWebsites.png"><img class="MCPopupThumbnail img" data-mc-width="757" data-mc-height="540" src="../Images/OnPrem/WE_PI_Wizard_MultipleWebsites_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                    </div>
+                                                </div>
+                                                <p class="StepsParagraph">The following image shows the IIS Manager with more than one website.</p>
+                                                <div class="ImgIndent">
+                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_IISManager_MultipleWebsite.png"><img class="MCPopupThumbnail img" data-mc-width="1176" data-mc-height="624" src="../Images/OnPrem/WE_IISManager_MultipleWebsite_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                    </div>
+                                                </div>
+                                                <p class="StepsParagraph">You can either delete one of the websites in the IIS Manager and then try the Printer Installer installation wizard again, or you can select one of the websites in the Printer Installer installation wizard and then click <span class="Emphasis">Next</span>.</p>
+                                                <p class="StepsParagraph">The installation wizard will run automatically and add the following items to your server.</p>
+                                                <ul class="TextIndent">
+                                                    <li value="1">IIS</li>
+                                                    <li value="2">PHP</li>
+                                                    <li value="3">Printer Installer website files in the default website location</li>
+                                                    <li value="4">MySQL</li>
+                                                </ul>
+                                                <div class="noteindent">
+                                                    <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>The <span class="GeneralPrinterInstaller">Printer Installer</span> database will not be created during installation. Rather, it is set up the first time you log in to the Admin Console.<br /></p>
+                                                </div>
+                                                <p class="StepsParagraph">The installer will notify you when the installation is complete. </p>
+                                                <ol data-mc-continue="true">
+                                                    <li value="5">Click <span class="Emphasis">Close</span>.</li>
+                                                </ol>
+                                            </div>
+                                            <h3 class="Steps">STEP 2: Apply the License File to the New Server</h3>
+                                            <div class="noteindent">
+                                                <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>If you have already applied your license to the installation on the new server, skip Step 2 and move to the next step.<br /></p>
+                                            </div>
+                                            <div class="StepsIndent">
+                                                <p class="StepsParagraph">You will not need a license file only if you created an A Record or a CName for the <span class="GeneralPrinterInstaller">Printer Installer</span> server website, which is recommended.</p>
+                                                <div class="indent">
+                                                    <ol>
+                                                        <li value="1">Copy the .dat file from server you are already using for <span class="GeneralPrinterInstaller">Printer Installer</span>.</li>
+                                                    </ol>
+                                                    <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_Inetpub.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="975" data-mc-height="685" src="../Images/OnPrem/WE_Inetpub_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="2">Paste the .dat file into the webroot folder on your new server.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <h3 class="Steps">STEP 3: Import the Database File from the Backup File</h3>
+                                            <div class="StepsIndent">
+                                                <ol>
+                                                    <li value="1">On the server where <span class="GeneralPrinterInstaller">Printer Installer</span> is installed, copy the backup file at c:\backup.sql.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_BackupSQLFile.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1249" data-mc-height="708" src="../Images/OnPrem/WE_BackupSQLFile_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="2">Paste the backup file to the root folder (c:) on the new <span class="GeneralPrinterInstaller">Printer Installer</span> server.</li>
+                                                    <li value="3">Open Windows Explorer and navigate  to <span class="Emphasis">c:\inetpub\wwwroot\config</span>.</li>
+                                                    <li value="4">Open settings.php in Notepad or your preferred text editor.</li>
+                                                    <li value="5">Copy the values for DBNAME, DBUSER, and DBPASSWORD.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_SettingsPHP.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1360" data-mc-height="839" src="../Images/OnPrem/WE_SettingsPHP_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="6">Paste these values into a temporary location such as Notepad.</li>
+                                                    <li value="7">Click the Start menu and type <span class="Emphasis">CMD</span>.</li>
+                                                    <li value="8">Right-click <span class="Emphasis">Command Prompt</span> and select <span class="Emphasis">Run as Administrator</span>.</li>
+                                                    <li value="9">In the command prompt, type <span class="Emphasis">cd c:\program files\mysql\mysql server 5.5\bin</span> and then press &lt;RETURN&gt; on your keyboard.</li>
+                                                    <li value="10">Type <span class="Emphasis">mysql --user=[DBUser} --password=[DBPassword] [DBName] &lt; c:\backup.sql</span> and then press &lt;RETURN&gt; on your keyboard.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_CMD_DBImport.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1311" data-mc-height="568" src="../Images/OnPrem/WE_CMD_DBImport_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                            </div>
+                                            <p class="StepsParagraph">The restored files do not include the portal header file. As a result, the header will display the default logo.</p>
+                                            <h3 class="Steps">STEP 4: Point the Client to the New Server</h3>
+                                            <div class="dropdown">
+                                                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />Option 1: Client HomeURL is a DNS Alias</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>This option is the preferred method. Change the client's HOMEURL to point to the new server. <a href="UpdateTheClient'sHomeURL.htm" class="MCXref xref">Update the Client's HomeURL.</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />Option 2: Client HomeURL is a Server Name</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Open DNS and change the DNS entry to point to the new server.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h2>Set up <span class="GeneralPrinterInstaller">Printer Installer</span> on a Failover Server</h2>
+                                            <div class="StepsIndent">
+                                                <ol>
+                                                    <li value="1">On the server where <span class="GeneralPrinterInstaller">Printer Installer</span> is installed, copy the backup file at c:\backup.sql.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_BackupSQLFile.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1249" data-mc-height="708" src="../Images/OnPrem/WE_BackupSQLFile_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="2">Paste the backup file to the root folder (c:) on the new <span class="GeneralPrinterInstaller">Printer Installer</span> server.</li>
+                                                    <li value="3">Open Windows Explorer and navigate  to <span class="Emphasis">c:\inetpub\wwwroot\config</span>.</li>
+                                                    <li value="4">Open settings.php in Notepad or your preferred text editor.</li>
+                                                    <li value="5">Copy the values for DBNAME, DBUSER, and DBPASSWORD.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_SettingsPHP.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1360" data-mc-height="839" src="../Images/OnPrem/WE_SettingsPHP_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="6">Paste these values into a temporary location such as Notepad.</li>
+                                                    <li value="7">Click the Start menu and type <span class="Emphasis">CMD</span>.</li>
+                                                    <li value="8">Right-click <span class="Emphasis">Command Prompt</span> and select <span class="Emphasis">Run as Administrator</span>.</li>
+                                                    <li value="9">In the command prompt, type <span class="Emphasis">cd c:\program files\mysql\mysql server 5.5\bin</span> and then press &lt;RETURN&gt; on your keyboard.</li>
+                                                    <li value="10">Type <span class="Emphasis">mysql --user=[DBUser} --password=[DBPassword] [DBName] &lt; c:\backup.sql</span> and then press &lt;RETURN&gt; on your keyboard.</li>
+                                                </ol>
+                                                <div class="ImageIndent"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/OnPrem/WE_CMD_DBImport.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1311" data-mc-height="568" src="../Images/OnPrem/WE_CMD_DBImport_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Mobile_Footer">
+                                    <p class="Mobile_Footer">Return to printerlogic.com</p>
+                                </div>
+                                <div class="backToTop">Back to Top</div>
+                                <script>
+			$(document).ready(function(){
+			
+			/*<![CDATA[*/
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			/*]]>*/
+
+
+			//on scroll, show the back to top button
+			$(window).scroll(function(){
+			if($(window).scrollTop() &gt;= 1){ //if user has scrolled the window
+			$('.backToTop').fadeIn(500); // show the back to top button
+			}else { // else if user is at the top already
+			$('.backToTop').fadeOut(500); //hide the back to top button
+			}
+			});
+
+			//scroll the page to the top if user clicks on the back to top button
+			$('.backToTop').click(function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+
+			//checks if page was already scrolled down before load
+			if($(window).scrollTop() &gt;= 1){
+			$('.backToTop').show(); // show the back to top button
+			}
+			
+		</script>
+                                <script>/*<![CDATA[*/function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}/*]]>*/</script>
+                                <script>/*<![CDATA[*/// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();/*]]>*/</script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+    <div class="Footer_Upper">
+        <div class="Top_Footer">
+            <div>
+                <p class="footerhead"><b>Printer</b>Logic</p>
+                <p class="footertext">Thousands of enterprises use PrinterLogic's patent pending printer and driver management platform to deliver Mobile, Pull and Virtual printing, while eliminating print servers and providing a self-service portal that empowers end users to install their own printers.</p>
+            </div>
+            <div>
+                <p class="footerhead">About Us</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Contact Us</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/news-releases/" target="_blank" class="FooterLinks">Newsroom</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/events/" class="FooterLinks" target="_blank">Events</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/careers/" target="_blank" class="FooterLinks">Careers</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Support</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/printer-installer/support/" target="_blank" class="FooterLinks">Technical</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Sales</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Partners</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partners/" target="_blank" class="FooterLinks">Our Partners</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partner-log-in/" target="_blank" class="FooterLinks">Partner Login</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/become-a-partner/" target="_blank" class="FooterLinks">Become a Partner</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Resource Center</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/" target="_blank" class="FooterLinks">Resource Center</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/blog/" target="_blank" class="FooterLinks">Blog</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/case-studies/" target="_blank" class="FooterLinks">Case Studies</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/white-papers/" target="_blank" class="FooterLinks">White Papers</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/videos/" target="_blank" class="FooterLinks">Videos</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/third-party-research/" target="_blank" class="FooterLinks">Third Party Research</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Footer_Lower">
+        <div class="Bottom_Footer">
+            <div>
+                <p class="footertext">PrinterLogic Global HQ</p>
+                <p class="footertext">912 West 1600 South</p>
+                <p class="footertext">St. George, Utah 84770</p>
+                <p class="footertext">USA</p>
+            </div>
+            <div>
+                <p class="footertext">PrinterLogic - Europe</p>
+                <p class="footertext">PrinterLogic GmbH</p>
+                <p class="footertext">Otto-von-Guericke-Ring 7</p>
+                <p class="footertext">65205 Wiesbaden</p>
+                <p class="footertext">Germany</p>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/PrinterLogicEnterprisePrinting" target="_blank"><i class="fa fa-facebook-official fa-lg" style="color:#3b5998" aria-hidden="true"></i></a><a href="https://twitter.com/PrinterLogic" target="_blank"><i class="fa fa-twitter-square fa-lg" style="color:#00abec" aria-hidden="true"></i></a><a href="https://www.instagram.com/printerlogic/" target="_blank"><i class="fa fa-instagram fa-lg" style="color:#3f729b" aria-hidden="true"></i></a><a href="https://plus.google.com/+Printerlogic" target="_blank"><i class="fa fa-google-plus-square fa-lg" style="color:#dd4a38" aria-hidden="true"></i></a><a href="https://www.youtube.com/c/Printerlogic" target="_blank"><i class="fa fa-youtube-play fa-lg" style="color:#ba0000" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company-beta/3505000/" target="_blank"><i class="fa fa-linkedin-square fa-lg" style="color:#006e9e" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class="footertext">© 2017 PrinterLogic. All Rights Reserved</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/privacy-policy/" target="_blank" class="FooterLinks">Privacy</a> | <a href="https://www.printerlogic.com/sitemap/" target="_blank" class="FooterLinks">Sitemap</a></p>
+            </div>
+        </div>
+    </div>
+</html>

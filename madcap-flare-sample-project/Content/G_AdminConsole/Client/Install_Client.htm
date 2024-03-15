@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_OnPrem_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Administrator|Printer Installer Client">
+    <script src="https://use.fontawesome.com/343d1c540f.js">
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Install Client</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/backtotop.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.printerlogic.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="content">
+                                    <div id="contentBody">
+                                        <div class="row collapse">
+                                            <div class="sideContent">
+                                                <div class="clearfix">
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_OnPrem_TopicToolBar mc-component nocontent">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                            </button>
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="nocontent menu _Skins_OnPrem_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/PrinterInstaller__PrinterInstallerOnlineHelp.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                            <h1 class="Other_Topics">Install <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> Client</h1>
+                                            <!-- Tab links -->
+                                            <div class="tab">
+                                                <button class="tablinks active" onclick="openCity(event, 'Summary')" id="defaultOpen">Summary</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Faqs')">FAQs</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Windows')">Windows</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Mac')">Mac</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Ubuntu')">Ubuntu</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Redhat')">Redhat</button>
+                                            </div>
+                                            <!-- Tab content -->
+                                            <!-- Summary Tab -->
+                                            <div id="Summary" class="tabcontent" style="display:block">
+                                                <p>The <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> client is software installed on the end-users' workstations to enable communication between the workstation and the <MadCap:conditionalText data-mc-conditions="General.NoHosted">Printer Installer server</MadCap:conditionalText>. The reason the client is such an essential piece of the overall  <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> product is that updates made by the administrator need to be made available to the end-user. In short, the administrator manages printers from the Admin Console, and those changes need to be pushed out to the workstations. Some of these print management tasks the administrator performs include installing printers, updating driver versions, deleting printers, and applying printer settings (known as profiles) to workstations so the end-user can print without having to monitor and manage print drivers and settings. The client runs in the background on any workstation that has it installed and should not require any intervention on the part of the end-user.</p>
+                                                <p>The client can be installed manually through the Admin Console, with a Windows startup script, with a third-party application (like Landesk), or with a GPO (Group Policy Software Installation Package) on workstations with a supported Windows, Mac, or Linux operating system. The recommended best practice is to use the tool your organization currently uses to make deployments for software, other agents, etc. </p>
+                                                <p>When the client is successfully installed on a workstation, the Start menu may or may not be populated with a new <span class="Emphasis">Printer Installer</span> section as shown below.</p>
+                                                <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Client_Start_Menu.png"><img class="MCPopupThumbnail img" data-mc-width="1330" data-mc-height="884" src="../../Images/Windows/Client_Start_Menu_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                </div>
+                                                <p>The appearance of these Start menu items depend on whether you, the administrator, makes them available to the end-user in the Admin Console, or more specifically in the Client Settings under <span class="Emphasis">Shortcut Options</span>, shown below.</p>
+                                                <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/Client_Settings_Shortcuts_Start_Menu.png"><img class="MCPopupThumbnail img" data-mc-width="1050" data-mc-height="670" src="../../Images/OnPrem/Client_Settings_Shortcuts_Start_Menu_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                </div>
+                                                <p>Similarly, the Windows System Tray may or may not be populated with the Printer Installer icon. </p>
+                                                <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Taskbar_Add_Printer.png"><img class="MCPopupThumbnail img" data-mc-width="259" data-mc-height="184" src="../../Images/Windows/Taskbar_Add_Printer_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                </div>
+                                                <p> The appearance of the icon in the Windows System tray are also dependent on whether they are made available through the Admin Console Shortcut Options. </p>
+                                                <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Client_Settings_Shortcut_System_Tray.png"><img class="MCPopupThumbnail img" data-mc-width="1050" data-mc-height="670" src="../../Images/OnPrem/AC_Client_Settings_Shortcut_System_Tray_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                </div>
+                                                <p> If the icon does appear, the end-user can click it to open the Self-service Portal, which the end-user can use to install printer drivers on their workstation. The end-user can also right-click the icon in the System Tray and then select from a number of different options to add printers, delete printers, select a default printer, open the Release Portal, and others.</p>
+                                                <p>The client is set, by default, to check in with the <MadCap:conditionalText data-mc-conditions="General.NoHosted">Printer Installer server</MadCap:conditionalText> every 240 minutes, but you can change this timeframe in the Admin Console Client Settings under <span class="Emphasis">Client Check-in</span>.</p>
+                                                <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Client_Settings_Client_Checkin.png"><img class="MCPopupThumbnail img" data-mc-width="1205" data-mc-height="443" src="../../Images/OnPrem/AC_Client_Settings_Client_Checkin_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                </div>
+                                                <p>Additionally, take note that even though there's a check box to the left of the Client Check-in feature, you cannot disable the client check-in process. The client will, at a minimum, check in during startup and login. The client o n the end-user's workstation also provides the Refresh Configurations option, which enables the end-user to manually check-in. This feature can be especially useful when you have an update ready, and you want the update to be installed immediately. You can deploy the update to your end-users' workstations, but you would have to wait for the client installed on the workstations to check-in. Otherwise, the end-user could refresh the client to see the update immediately. Consider an example in which a company does not allow self-service printer installation. Rather, they allow only printer deployment assignments. In this case, when the administrator has the deployment assignment ready for deployment, nothing happens until the client checks in (or the end-user forces the refresh from their workstation).</p>
+                                            </div>
+                                            <!-- Faqs Tab -->
+                                            <div id="Faqs" class="tabcontent" style="display:block">
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />Does the client support languages other than English?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <p>Yes. The Printer Installer client features can appear in any of the following languages:</p>
+                                                        <ul>
+                                                            <li value="1">French</li>
+                                                            <li value="2">Spanish</li>
+                                                            <li value="3">Portuguese</li>
+                                                            <li value="4">Japanese</li>
+                                                            <li value="5">Chinese</li>
+                                                            <li value="6">German</li>
+                                                            <li value="7">Dutch</li>
+                                                            <li value="8">Thai</li>
+                                                            <li value="9">Italian</li>
+                                                            <li value="10">Turkish</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Windows" class="tabcontent" style="display:block">
+                                                <div class="Jump_To_Step " data-mc-conditions="General.NoHosted">
+                                                    <p>Jump to a Step:</p>
+                                                    <div class="indent">
+                                                        <p><a href="#Windows_Option1">Option 1: Install the Client with a Third-Party Application</a>
+                                                        </p>
+                                                        <p><a href="#Windows_Option2">Option 2: Install the Client with a Group Policy Software Package</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="Windows_Option1"></a>
+                                                    <MadCap:conditionalText data-mc-conditions="General.NoHosted">Option 1: </MadCap:conditionalText>Install the Client with a Third-Party Application</h3>
+                                                <div class="IndentStep">
+                                                    <div>
+                                                        <p>Run the PrinterInstallerClient.msi with the following command line parameters:</p>
+                                                        <p class="indent"><span class="Code">\\servershare\PrinterInstallerClient.msi /qn HOMEURL=http://Printer</span><span class="Code" data-mc-conditions="General.NoHosted">Installer</span><span class="Code">PortalURL AUTHORIZATION_CODE=add the generated code here</span> </p>
+                                                        <p>or</p>
+                                                        <p class="indent"><span class="Code">msiexec /i PrinterInstallerClient.msi /qn HOMEURL=http://Printer</span>
+                                                            <MadCap:conditionalText data-mc-conditions="General.NoHosted"><span class="Code">Installer</span>
+                                                            </MadCap:conditionalText><span class="Code">PortalURL AUTHORIZATION_CODE=add the generated code here</span>
+                                                        </p>
+                                                        <div class="noteindent" data-mc-conditions="General.NoHosted">
+                                                            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;" data-mc-conditions="General.NoHosted"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>The authorization code refers to the code you set up in the Admin Console under <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Authorized Devices</span>. Keep in mind that this option appears only if you have installed Printer Installer 18.1 with OAuth enabled. <a href="../Security/OAuth.htm" class="MCXref xref">For more information, see OAuth.</a><br /></p>
+                                                        </div>
+                                                        <ul>
+                                                            <li value="1" data-mc-conditions="General.NoHosted">PrinterInstallerClient.msi is in the C:\inetpub\wwwroot\public\client\setup folder of your server.</li>
+                                                            <li value="2">The /qn command runs the install silently.</li>
+                                                            <li value="3">You can copy the PrinterInstallerClient.msi to a different distribution point.</li>
+                                                            <li value="4">If installing on a multi-user environment such as Terminal Services or Citrix XenApp, you will need to configure the client for Remote Desktop Services mode.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue" data-mc-conditions="General.NoHosted"><a name="Windows_Option2"></a>Option 2: Install the Client with a Group Policy Software Package</h3>
+                                                <div class="IndentStep" data-mc-conditions="General.NoHosted">
+                                                    <ol>
+                                                        <li value="1">Open the C:\inetpub\wwwroot\public\client\setup folder on the web server. </li>
+                                                    </ol>
+                                                    <p class="indent">In the folder is a config.ini that is used to specify the home directory of the client, which knows what page to open to when users click <span class="Emphasis">Start</span> &gt; <span class="Emphasis">Programs</span> &gt; <span class="Emphasis">Printer Installer</span> &gt; <span class="Emphasis">Add Printer</span> or the system tray icon. Only the home directory value is required. For example: </p>
+                                                    <p class="indent"> <span class="Code">HomeURL=http://printers.domain.com</span></p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="2">Edit the config.ini file to reflect your webserver url, then place C:\intepub\wwwroot\public\client\setup.msi and the config.ini file (c:\inetpub\wwwroot\client\setup.msi) in a distribution folder.</li>
+                                                        <li value="3">Follow the steps in this <a href="http://support.microsoft.com/kb/816102" target="_blank">article</a> to set up the Group Policy Software Installation Package.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div id="Mac" class="tabcontent" style="display:block">
+                                                <p>The following script downloads the <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> client and installs it on a Mac. Additionally, the script authorizes the device with an authorization code included in the script as shown below.</p>
+                                                <div class="Code_Short">
+                                                    <p data-mc-conditions="General.NoHosted"><span class="Code">curl -o /tmp/PrinterInstallerClientSetup.pkg [PROTOCOL]://[HOMEURL]/client/setup/PrinterInstallerClientSetup.pkg &amp;&amp; sudo installer -allowUntrusted -pkg /tmp/PrinterInstallerClientSetup.pkg -target / &amp;&amp; sudo /opt/PrinterInstallerClient/bin/set_home_url.sh [PROTOCOL] [HOMEURL]</span>
+                                                    </p>
+                                                    <ul data-mc-conditions="General.NoHosted">
+                                                        <li value="1" data-mc-conditions="General.NoHosted">PrinterInstallerClientSetup.pkg is in the c:\inetpub\wwwroot\public\client\setup folder of your Printer Installer server.</li>
+                                                        <li value="2" data-mc-conditions="General.NoHosted">In place of [PROTOCOL] enter either <span class="Emphasis">http</span> or <span class="Emphasis">https</span> as appropriate.</li>
+                                                        <li value="3" data-mc-conditions="General.NoHosted">In place of [HOME_URL], enter the home path to the Printer Installer server (such as printers.domain.com).</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="Ubuntu" class="tabcontent" style="display:block">
+                                                <ol>
+                                                    <li value="1">Get the client install .deb file from the server:</li>
+                                                </ol>
+                                                <div class="indent">
+                                                    <ul>
+                                                        <li value="1">(32-bit) wget http://HOME_URL_PATH/public/client/setup/printerinstallerclient_i386.deb</li>
+                                                        <li value="2">(64-bit) wget http://HOME_URL_PATH/public/client/setup/printerinstallerclient_amd64.deb</li>
+                                                    </ul>
+                                                </div>
+                                                <ol data-mc-continue="true">
+                                                    <li value="2">In place of HOME_URL_SCHEME enter either http or https as appropriate.</li>
+                                                    <li value="3">In place of HOME_URL_PATH enter the home path to the server (such as printers.domain.com).</li>
+                                                    <li value="4">Install the client and set the homeurl with the following command:</li>
+                                                </ol>
+                                                <div class="indent">
+                                                    <ul>
+                                                        <li value="1">
+                                                            <p>(32-bit) sudo dpkg -i printerinstallerclient_i386.deb || sudo apt-get -f install &amp;&amp; sudo /opt/PrinterInstallerClient/bin/./set_home_url.sh HOME_URL_SCHEME HOME_URL_PATH</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>(64-bit) sudo dpkg -i printerinstallerclient_amd64.deb || sudo apt-get -f install &amp;&amp; sudo /opt/PrinterInstallerClient/bin/./set_home_url.sh HOME_URL_SCHEME HOME_URL_PATH</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p>If you are on a 64bit HP ThinPro device you will install the Client with the following command: sudo dpkg -i printerinstallerclient_amd64.deb || sudo apt-get -f install &amp;&amp; sudo /writable/opt/PrinterInstallerClient/bin/./set_home_url.sh HOME_URL_SCHEME HOME_URL_PATH.</p>
+                                                <p>If you are on a 32bit HP ThinPro device you will install the Client with the following command: sudo dpkg -i printerinstallerclient_i386.deb || sudo apt-get -f install &amp;&amp; sudo /writable/opt/PrinterInstallerClient/bin/./set_home_url.sh HOME_URL_SCHEME HOME_URL_PATH.</p>
+                                            </div>
+                                            <div id="Redhat" class="tabcontent" style="display:block">
+                                                <h3 class="Blue">Step 1: Install Cups 2.0 or Higher on the Redhat Workstation</h3>
+                                                <div class="IndentStep">
+                                                    <ol>
+                                                        <li value="1">Browse to <a href="http://www.cups.org/" target="_blank">cups.org</a> in a browser.</li>
+                                                        <li value="2">Push <span class="Emphasis">Download CUPS</span> to download cups 2.0 or higher.</li>
+                                                        <li value="3">Open a terminal and type <span class="Emphasis">cd Downloads</span> directory.</li>
+                                                        <li value="4">Type <span class="Emphasis">tar -xzf cups2.x.tar.gz</span>.</li>
+                                                        <li value="5">Navigate to the newly extracted cups directory (cd cups2.x).</li>
+                                                        <li value="6">Type <span class="Emphasis">./configure</span>.</li>
+                                                        <li value="7">Type <span class="Emphasis">make</span>.</li>
+                                                        <li value="8">Type <span class="Emphasis">make install</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">Voila! You have installed CUPS.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">Verify by typing <span class="Emphasis">cups-config --version</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue">Step 2: Upgrade Firefox</h3>
+                                                <div class="IndentStep">
+                                                    <p>For more information, see <a href="https://tecadmin.net/install-firefox-on-linux/#" target="_blank">https://tecadmin.net/install-firefox-on-linux/#</a>.</p>
+                                                </div>
+                                                <h3 class="Blue">Step 3: Install the Printer Installer Client on the Redhat Workstation</h3>
+                                                <div class="IndentStep">
+                                                    <ol>
+                                                        <li value="1">Open Firefox and browse to the Self-service Portal.</li>
+                                                        <li value="2">When the message appears, indicating that the client has not been installed on the workstation, click <span class="Emphasis">Yes</span>.</li>
+                                                        <li value="3">Click <span class="Emphasis">Yes</span> again.</li>
+                                                        <li value="4">Click <span class="Emphasis">Install</span>.</li>
+                                                        <li value="5">Open a command line.</li>
+                                                        <li value="6">Browse to your Downloads directory by typing <span class="Emphasis">cd Downloads</span>.</li>
+                                                        <li value="7">Type <span class="Emphasis">yum install printerinstallerclient_x86_64.rpm</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">At this point, the client is installed on the Redhat workstation. You can see the Printer Installer tab in the lower left corner. It may be auto-hidden.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Mobile_Footer">
+                                    <p class="Mobile_Footer">Return to printerlogic.com</p>
+                                </div>
+                                <div class="backToTop">Back to Top</div>
+                                <script>
+			$(document).ready(function(){
+			
+			/*<![CDATA[*/
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			/*]]>*/
+
+
+			//on scroll, show the back to top button
+			$(window).scroll(function(){
+			if($(window).scrollTop() &gt;= 1){ //if user has scrolled the window
+			$('.backToTop').fadeIn(500); // show the back to top button
+			}else { // else if user is at the top already
+			$('.backToTop').fadeOut(500); //hide the back to top button
+			}
+			});
+
+			//scroll the page to the top if user clicks on the back to top button
+			$('.backToTop').click(function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+
+			//checks if page was already scrolled down before load
+			if($(window).scrollTop() &gt;= 1){
+			$('.backToTop').show(); // show the back to top button
+			}
+			
+		</script>
+                                <script>/*<![CDATA[*/function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}/*]]>*/</script>
+                                <script>/*<![CDATA[*/// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();/*]]>*/</script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+    <div class="Footer_Upper">
+        <div class="Top_Footer">
+            <div>
+                <p class="footerhead"><b>Printer</b>Logic</p>
+                <p class="footertext">Thousands of enterprises use PrinterLogic's patent pending printer and driver management platform to deliver Mobile, Pull and Virtual printing, while eliminating print servers and providing a self-service portal that empowers end users to install their own printers.</p>
+            </div>
+            <div>
+                <p class="footerhead">About Us</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Contact Us</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/news-releases/" target="_blank" class="FooterLinks">Newsroom</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/events/" class="FooterLinks" target="_blank">Events</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/careers/" target="_blank" class="FooterLinks">Careers</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Support</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/printer-installer/support/" target="_blank" class="FooterLinks">Technical</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Sales</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Partners</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partners/" target="_blank" class="FooterLinks">Our Partners</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partner-log-in/" target="_blank" class="FooterLinks">Partner Login</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/become-a-partner/" target="_blank" class="FooterLinks">Become a Partner</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Resource Center</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/" target="_blank" class="FooterLinks">Resource Center</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/blog/" target="_blank" class="FooterLinks">Blog</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/case-studies/" target="_blank" class="FooterLinks">Case Studies</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/white-papers/" target="_blank" class="FooterLinks">White Papers</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/videos/" target="_blank" class="FooterLinks">Videos</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/third-party-research/" target="_blank" class="FooterLinks">Third Party Research</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Footer_Lower">
+        <div class="Bottom_Footer">
+            <div>
+                <p class="footertext">PrinterLogic Global HQ</p>
+                <p class="footertext">912 West 1600 South</p>
+                <p class="footertext">St. George, Utah 84770</p>
+                <p class="footertext">USA</p>
+            </div>
+            <div>
+                <p class="footertext">PrinterLogic - Europe</p>
+                <p class="footertext">PrinterLogic GmbH</p>
+                <p class="footertext">Otto-von-Guericke-Ring 7</p>
+                <p class="footertext">65205 Wiesbaden</p>
+                <p class="footertext">Germany</p>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/PrinterLogicEnterprisePrinting" target="_blank"><i class="fa fa-facebook-official fa-lg" style="color:#3b5998" aria-hidden="true"></i></a><a href="https://twitter.com/PrinterLogic" target="_blank"><i class="fa fa-twitter-square fa-lg" style="color:#00abec" aria-hidden="true"></i></a><a href="https://www.instagram.com/printerlogic/" target="_blank"><i class="fa fa-instagram fa-lg" style="color:#3f729b" aria-hidden="true"></i></a><a href="https://plus.google.com/+Printerlogic" target="_blank"><i class="fa fa-google-plus-square fa-lg" style="color:#dd4a38" aria-hidden="true"></i></a><a href="https://www.youtube.com/c/Printerlogic" target="_blank"><i class="fa fa-youtube-play fa-lg" style="color:#ba0000" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company-beta/3505000/" target="_blank"><i class="fa fa-linkedin-square fa-lg" style="color:#006e9e" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class="footertext">© 2017 PrinterLogic. All Rights Reserved</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/privacy-policy/" target="_blank" class="FooterLinks">Privacy</a> | <a href="https://www.printerlogic.com/sitemap/" target="_blank" class="FooterLinks">Sitemap</a></p>
+            </div>
+        </div>
+    </div>
+</html>

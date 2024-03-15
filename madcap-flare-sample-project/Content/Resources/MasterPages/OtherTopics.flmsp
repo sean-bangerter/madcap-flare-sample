@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1062" MadCap:lastWidth="913">
+    <script src="https://use.fontawesome.com/343d1c540f.js">
+    </script>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <script type="text/javascript" src="../Scripts/backtotop.js">
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                        <div class="clearfix">
+                            <MadCap:topicToolbarProxy />
+                        </div>
+                        <MadCap:menuProxy style="mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/OnPrem/SideMenu.flskn" />
+                    </div>
+                    <MadCap:breadcrumbsProxy />
+                    <MadCap:bodyProxy />
+                </div>
+            </div>
+        </div>
+        <div class="Mobile_Footer">
+            <p class="Mobile_Footer">Return to printerlogic.com</p>
+        </div>
+        <div class="backToTop">Back to Top</div>
+        <script>
+			$(document).ready(function(){
+			
+			/*<![CDATA[*/
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			/*]]>*/
+
+
+			//on scroll, show the back to top button
+			$(window).scroll(function(){
+			if($(window).scrollTop() &gt;= 1){ //if user has scrolled the window
+			$('.backToTop').fadeIn(500); // show the back to top button
+			}else { // else if user is at the top already
+			$('.backToTop').fadeOut(500); //hide the back to top button
+			}
+			});
+
+			//scroll the page to the top if user clicks on the back to top button
+			$('.backToTop').click(function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+
+			//checks if page was already scrolled down before load
+			if($(window).scrollTop() &gt;= 1){
+			$('.backToTop').show(); // show the back to top button
+			}
+			
+		</script>
+        <script>/*<![CDATA[*/function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}/*]]>*/</script>
+        <script>/*<![CDATA[*/// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();/*]]>*/</script>
+    </body>
+    <div class="Footer_Upper">
+        <div class="Top_Footer">
+            <div>
+                <p class="footerhead"><b>Printer</b>Logic</p>
+                <p class="footertext">Thousands of enterprises use PrinterLogic's patent pending printer and driver management platform to deliver Mobile, Pull and Virtual printing, while eliminating print servers and providing a self-service portal that empowers end users to install their own printers.</p>
+            </div>
+            <div>
+                <p class="footerhead">About Us</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Contact Us</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/news-releases/" target="_blank" class="FooterLinks">Newsroom</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/events/" class="FooterLinks" target="_blank">Events</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/careers/" target="_blank" class="FooterLinks">Careers</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Support</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/printer-installer/support/" target="_blank" class="FooterLinks">Technical</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Sales</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Partners</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partners/" target="_blank" class="FooterLinks">Our Partners</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partner-log-in/" target="_blank" class="FooterLinks">Partner Login</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/become-a-partner/" target="_blank" class="FooterLinks">Become a Partner</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Resource Center</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/" target="_blank" class="FooterLinks">Resource Center</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/blog/" target="_blank" class="FooterLinks">Blog</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/case-studies/" target="_blank" class="FooterLinks">Case Studies</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/white-papers/" target="_blank" class="FooterLinks">White Papers</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/videos/" target="_blank" class="FooterLinks">Videos</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/third-party-research/" target="_blank" class="FooterLinks">Third Party Research</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Footer_Lower">
+        <div class="Bottom_Footer">
+            <div>
+                <p class="footertext">PrinterLogic Global HQ</p>
+                <p class="footertext">912 West 1600 South</p>
+                <p class="footertext">St. George, Utah 84770</p>
+                <p class="footertext">USA</p>
+            </div>
+            <div>
+                <p class="footertext">PrinterLogic - Europe</p>
+                <p class="footertext">PrinterLogic GmbH</p>
+                <p class="footertext">Otto-von-Guericke-Ring 7</p>
+                <p class="footertext">65205 Wiesbaden</p>
+                <p class="footertext">Germany</p>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/PrinterLogicEnterprisePrinting" target="_blank"><i class="fa fa-facebook-official fa-lg" style="color:#3b5998" aria-hidden="true"></i></a><a href="https://twitter.com/PrinterLogic" target="_blank"><i class="fa fa-twitter-square fa-lg" style="color:#00abec" aria-hidden="true"></i></a><a href="https://www.instagram.com/printerlogic/" target="_blank"><i class="fa fa-instagram fa-lg" style="color:#3f729b" aria-hidden="true"></i></a><a href="https://plus.google.com/+Printerlogic" target="_blank"><i class="fa fa-google-plus-square fa-lg" style="color:#dd4a38" aria-hidden="true"></i></a><a href="https://www.youtube.com/c/Printerlogic" target="_blank"><i class="fa fa-youtube-play fa-lg" style="color:#ba0000" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company-beta/3505000/" target="_blank"><i class="fa fa-linkedin-square fa-lg" style="color:#006e9e" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class="footertext">© 2017 PrinterLogic. All Rights Reserved</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/privacy-policy/" target="_blank" class="FooterLinks">Privacy</a> | <a href="https://www.printerlogic.com/sitemap/" target="_blank" class="FooterLinks">Sitemap</a></p>
+            </div>
+        </div>
+    </div>
+</html>

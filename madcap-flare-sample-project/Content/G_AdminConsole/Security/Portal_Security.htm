@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_OnPrem_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Administrator|Security and Permissions">
+    <script src="https://use.fontawesome.com/343d1c540f.js">
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Portal Security</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/backtotop.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.printerlogic.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="content">
+                                    <div id="contentBody">
+                                        <div class="row collapse">
+                                            <div class="sideContent">
+                                                <div class="clearfix">
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_OnPrem_TopicToolBar mc-component nocontent">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                            </button>
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="nocontent menu _Skins_OnPrem_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/PrinterInstaller__PrinterInstallerOnlineHelp.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                            <h1 class="Other_Topics">Portal Security</h1>
+                                            <p>
+                                                <head><title>Secure Release Printing</title>
+                                                </head>
+                                            </p>
+                                            <p>
+                                                <!-- Tab links -->
+                                            </p>
+                                            <div class="tab">
+                                                <button class="tablinks active" onclick="openCity(event, 'Summary')" id="defaultOpen">Summary</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Faqs')">FAQs</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Setup')">Setup</button>
+                                            </div>
+                                            <p>
+                                                <!-- Tab content -->
+                                                <!-- Summary Tab -->
+                                            </p>
+                                            <div id="Summary" class="tabcontent" style="display:block">
+                                                <p> The Portal Security settings in the Admin Console enable you to show or hide folders or printer objects in the Self-service Portal tree view (and map) based on who is logged into the portal. To use a simple example, let's say you purchase a new printer for the specific purpose of printing corporate checks. To prevent unwanted printing on the new printer, you want only three specific employees (George, Mary, and Shelley) to be able to see the printer in the Self-service Portal and then download drivers for the new printer. </p>
+                                                <div class="ImagesFloatLeft">
+                                                    <p>
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Security_Tab_Options.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="557" src="../../Images/OnPrem/AC_Security_Tab_Options_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                        <div>
+                                                            <figcaption>Security Tab</figcaption>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <p>The Portal Security settings are found in the Security tab menu, as shown in the image to the left, and enable you to assign those users (George, Mary, and Shelley) to the folder in which the printer object resides or to the printer object itself. Take note that there are several ways in which you can configure the Portal Security settings so that George, Mary, and Shelley can download the printer drivers for the new printer. </p>
+                                                <p>You can use Active Directory objects such as users, groups, computer, etc. to authenticate a user. For example, let's say George, Mary, and Shelley all have Active Directory accounts within your environment. In the Portal Security settings section, click <span class="Emphasis">Add</span> and select the three users from Active Directory. If you do not want to use Active Directory objects, you can simply create a <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> object such as an IP&#160;address range, which can be used to authenticate a workstation's IP address to determine if the printer driver can be downloaded on that workstation. If, for example, George's workstation has an IP address that falls within the range, then George will be able to open the Self-service Portal and install the drivers for the new printer.</p>
+                                                <h2>Include Inherited Security</h2>
+                                                <div class="ImagesFloatRight">
+                                                    <p>
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Portal_Security_Tab_Include_Inherited.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="533" src="../../Images/OnPrem/AC_Portal_Security_Tab_Include_Inherited_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                        <div>
+                                                            <figcaption>Include Inherited Security</figcaption>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <p>Of particular importance in the Portal Security tab is the <span class="Emphasis">Include Inherited Security</span> option as shown in the image to the right. This option enables you to automatically take the permissions set on the parent folder and automatically apply them to a subfolder or a printer object stored within the parent folder. By default, new folders and printer objects have <span class="Emphasis">Include inherited Security</span> selected automatically.</p>
+                                                <div>
+                                                    <p class="Note_Short" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span> Inherited Security settings not properly configured can have a tremendous impact on <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span>, so make sure you understand how they work before implementing them.<br /></p>
+                                                </div>
+                                                <p>To put this in perspective, take a closer look at the image to the right. For this example, let's say that your organization has three locations with printers in Northern California. As such, your Admin Console tree view shows a parent folder named  <span class="Emphasis">California</span>, which contains a subfolder named <span class="Emphasis">North</span>, which contains three subfolders named, respectively, <span class="Emphasis">Palo Alto</span>, <span class="Emphasis">Sacramento</span>, and <span class="Emphasis">San Francisco</span> for the cities in which the printers are located.&#160;Furthermore, the San Francisco folder has one printer object named <span class="Emphasis">Printer A</span>. The structure for such a hierarchy can be viewed in the tree view of the sample image.</p>
+                                                <p>If you set an object on the root level of the tree, any folders or printer objects that reside on the root level and have <span class="Emphasis">Include Inherited Security</span> selected will automatically assume the objects set at the root level. For example, let's say that in the Admin Console, you select the root level of the tree view (default is <span class="Emphasis">My Company</span>), and in the Portal Security section of the Security tab, you add Group 1, which consists of User 1, User 2, and User 3. Because you added the group at the root level, any folders directly under <span class="Emphasis">My Company</span> that have <span class="Emphasis">Include Inherited Security</span> selection will also have Group 1 added to it. So, if you add Folder A and Folder B under <span class="Emphasis">My Company</span>, and Folder A has <span class="Emphasis">Include Inherited Security</span> selected but Folder B does not. This configuration means that Folder A will assume Group 1, which has been set at its parent level. Folder B will not assume the Group 1 object, which means that the Active Directory or <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> object(s) will need to be set on Folder B itself. The objects set at the root level will continue to cascade into child folders and printer objects until you deselect <span class="Emphasis">Include Inherited Security</span> in a folder.</p>
+                                                <p>Furthermore, Portal Security contains the Assignment Type column, which identifies whether an object is set at the selected level or is inherited from a parent level. If the Assignment Type column displays <span class="Emphasis">Explicit</span> then the object was created explicitly for the selected folder or printer object in the Admin Console tree view. If the Assignment Type column displays <span class="Emphasis">Inherited</span> then the object was created on the parent folder, or the parent folder also inherited the object from its parent folder.</p>
+                                                <p>For example, you select the San Francisco folder in the Admin Console tree view, and then you click <span class="Emphasis">Security</span> &gt;&#160;<span class="Emphasis">Portal Security</span> to see three objects - a user, a group, and a computer (all Active Directory objects), where the group object displays <span class="Emphasis">Explicit</span> in the Assignment Type field, which means that whoever created the group did so by clicking <span class="Emphasis">Add</span> in Portal Security and creating the object for that folder. If the group object displays <span class="Emphasis">Inherited</span> then the object was created on the selected folder's parent folder, and <span class="Emphasis">Include Inherited Security</span> is selected for the San Francisco folder.</p>
+                                                <div>
+                                                    <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>Deselecting <span class="Emphasis">Include Inherited Security</span> at a higher level in the tree view will automatically remove the inherited objects in items further down the tree view. As such, please be careful 1) when using Include Inherited Security, and 2) when adding <span class="Emphasis">Everyone</span> as an Active Directory object to Portal Security. For example, if you added <span class="Emphasis">Everyone</span> at the My Company root level, then all folders and printer objects that have Include Inherited Security selected will also assume <span class="Emphasis">Everyone</span>, which will give everyone access to everything, which you most likely do not want.<br /></p>
+                                                </div>
+                                            </div>
+                                            <!-- FAQs Tab -->
+                                            <div id="Faqs" class="tabcontent" style="display:block">
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the difference between <span class="Emphasis">Hide from Portal</span> and <span class="Emphasis">Portal Security</span>?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The <span class="Emphasis">Hide from Portal</span> setting in the General tab (as shown below) is used to hide a printer from all users in the Self-service Portal. </p>
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_General_Tab_Hide_From_Portal.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="619" src="../../Images/OnPrem/AC_General_Tab_Hide_From_Portal_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                        <p>This feature is generally used for testing printers in development prior to pushing them to a production environment. </p>
+                                                        <p>The Security tab contains the <span class="Emphasis">Portal Security</span> settings, which are used to give Self-service Portal access for a specific printer object to certain users, computers, etc. as shown below.</p>
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Security_Tab_Options.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="557" src="../../Images/OnPrem/AC_Security_Tab_Options_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                        <p>The <span class="Emphasis">Portal Security</span> settings enable you to configure <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> to show or hide a folder or printer object in the tree view to a specific group of users or workstations. <span class="Emphasis">Hide from Portal</span> tends to be used temporarily while <span class="Emphasis">Portal Security</span> is more for long-term use.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What does <span class="Emphasis">Include Inherited Security</span> do?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When you set portal security permissions on a folder or printer object in the Admin Console tree view, you can click the <span class="Emphasis">Include Inherited Security</span> checkbox to use the parent folder's security permissions. For example, if you have a printer object named <span class="Emphasis">HP 700 Color</span> that is housed within the Floor 34 folder, and the folder has permissions for a group, then those same permissions are applied to the HP 700 Color printer, which means any end-users added to the group will have access to the HP 700 Color printer in the Self-service Portal.</p>
+                                                        <p>Similarly, if you deselect <span class="Emphasis">Include Inherited Security</span>, then the group permissions applied to the Floor 34 folder are no longer applied to the HP 700 Color printer. However, this also means that you need to directly assign permissions to the printer itself. Otherwise, the printer will not be available in the Self-service Portal to end-users. In other words, if you apply the same group that was assigned to the Floor 34 folder, then the users in that group will be able to see the printer in the Self-service Portal.</p>
+                                                        <p>Keep in mind that if the parent folder has Everyone set as the security level, then all items within the folder will also have Everyone set to their security levels as well. As such, if you want to set different security levels to different items in the folder, then you will not want to have <span class="Emphasis">Everyone</span> set as the level, so you will want to deselect <span class="Emphasis">Include Inherited Security</span>.</p>
+                                                        <p>Additionally, an object name in the list of Portal Security items indicates whether an object name is inheriting the permissions of the parent or not. The Association Type column shows either <span class="Emphasis">Inherited</span> or <span class="Emphasis">Explicit</span>. The reason for this column is that a folder or printer object can be assigned both inherited permissions and other permissions that apply specifically to the printer object or folder. For example, if the parent folder is associated to a group with 50 users, and you want all the members of that group to have access to a printer object in that folder. However, you have three users that you do not want to have access to the group, but you do want them to have access to the printer object. Rather than creating a separate group with all 53 users, you can provide inherited permissions from the parent folder, and then assign the other three users to the printer object.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Setup" class="tabcontent" style="display:block">
+                                                <!-- Tab 2 -->
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, select either a folder or a printer object from the tree view.</li>
+                                                        <li value="2">Click <span class="Emphasis">Security</span> &gt; <span class="Emphasis">Portal Security</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_SecurityTab_Portal_Security.png"><img class="MCPopupThumbnail img" data-mc-width="1085" data-mc-height="441" src="../../Images/OnPrem/AC_SecurityTab_Portal_Security_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">In the tree view, select the folder or printer object to which you would like to provide access for the end-user.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_SecurityTab_Portal_Security_Select_Folder.png"><img class="MCPopupThumbnail img" data-mc-width="1387" data-mc-height="730" src="../../Images/OnPrem/AC_SecurityTab_Portal_Security_Select_Folder_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="5">Select the object that you want to apply to the selected folder or printer object.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_SecurityTab_Add.png"><img class="MCPopupThumbnail img" data-mc-width="1131" data-mc-height="490" src="../../Images/OnPrem/AC_SecurityTab_Add_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="indent">
+                                                        <ol style="list-style-type: lower-alpha;">
+                                                            <li value="1"><span class="Emphasis">Option 1:</span> User, Computer, or Group</li>
+                                                        </ol>
+                                                        <div class="AD_Object_Indented">
+                                                            <p>If you click <span class="Emphasis">Active Directory</span> &gt;&#160;<span class="Emphasis">User, Computer, or Group</span>, then the Select Users, Computers, or Groups window will appear as shown below.</p>
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AD_Select_Users_Computers_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1001" data-mc-height="381" src="../../Images/OnPrem/AD_Select_Users_Computers_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                            <p> After you have selected the user, computer, or group, click <span class="Emphasis">OK</span>.</p>
+                                                        </div>
+                                                        <ol style="list-style-type: lower-alpha;" data-mc-continue="true">
+                                                            <li value="2"><span class="Emphasis">Option 2:</span> Container or OU</li>
+                                                        </ol>
+                                                        <div class="AD_Object_Indented">
+                                                            <p>If you click <span class="Emphasis">Active Directory</span> &gt; <span class="Emphasis">Container or OU</span>, then the Select Containers window will open as shown below.</p>
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_SecurityTab_Add_Container.png"><img class="MCPopupThumbnail img" data-mc-width="449" data-mc-height="507" src="../../Images/OnPrem/AC_SecurityTab_Add_Container_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                            <p> After you have selected the container or organizational unit, click <span class="Emphasis">OK</span>.</p>
+                                                        </div>
+                                                        <ol style="list-style-type: lower-alpha;" data-mc-continue="true">
+                                                            <li value="3"><span class="Emphasis">Option 3:</span> IP&#160;Address Range</li>
+                                                        </ol>
+                                                        <div class="AD_Object_Indented">
+                                                            <p>If you click <span class="Emphasis">IP Address Range</span>, then the Add IP Address Range window will appear as shown below.</p>
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Portal_SecurityTab_IPAddressRange.png"><img class="MCPopupThumbnail img" data-mc-width="640" data-mc-height="420" src="../../Images/OnPrem/AC_Portal_SecurityTab_IPAddressRange_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                            <p> Click <span class="Emphasis">Search</span> to type the IP&#160;address range, or click <span class="Emphasis">Browse</span> to navigate the tree view to find the IP address range you would like to add. When you have selected the IP address range, click <span class="Emphasis">Add</span>.</p>
+                                                        </div>
+                                                        <ol style="list-style-type: lower-alpha;" data-mc-continue="true">
+                                                            <li value="4"><span class="Emphasis">Option 4:</span> Hostname</li>
+                                                        </ol>
+                                                        <div class="AD_Object_Indented">
+                                                            <p>If you click <span class="Emphasis">Hostname</span>, then the corresponding window (respectively) will appear as shown below.</p>
+                                                            <div><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Security_Tab_Add_Hostname.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="321" data-mc-height="170" src="../../Images/OnPrem/AC_Security_Tab_Add_Hostname_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                            </div>
+                                                            <p> Type the hostname and then click <span class="Emphasis">Add</span>.</p>
+                                                        </div>
+                                                        <ol style="list-style-type: lower-alpha;" data-mc-continue="true">
+                                                            <li value="5"><span class="Emphasis">Option 4:</span> MAC Address</li>
+                                                        </ol>
+                                                        <div class="AD_Object_Indented">
+                                                            <p>If you click <span class="Emphasis">MAC Address</span>, then the corresponding window (respectively) will appear as shown below.</p>
+                                                            <div><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Security_Tab_Add_MAC_Address.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="321" data-mc-height="150" src="../../Images/OnPrem/AC_Security_Tab_Add_MAC_Address_thumb_250_0.png" style="mc-thumbnail: popup;" alt="" title="" tabindex="" /></a>
+                                                            </div>
+                                                            <p> Type the MAC address and then click <span class="Emphasis">Add</span>.</p>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Mobile_Footer">
+                                    <p class="Mobile_Footer">Return to printerlogic.com</p>
+                                </div>
+                                <div class="backToTop">Back to Top</div>
+                                <script>
+			$(document).ready(function(){
+			
+			/*<![CDATA[*/
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			/*]]>*/
+
+
+			//on scroll, show the back to top button
+			$(window).scroll(function(){
+			if($(window).scrollTop() &gt;= 1){ //if user has scrolled the window
+			$('.backToTop').fadeIn(500); // show the back to top button
+			}else { // else if user is at the top already
+			$('.backToTop').fadeOut(500); //hide the back to top button
+			}
+			});
+
+			//scroll the page to the top if user clicks on the back to top button
+			$('.backToTop').click(function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+
+			//checks if page was already scrolled down before load
+			if($(window).scrollTop() &gt;= 1){
+			$('.backToTop').show(); // show the back to top button
+			}
+			
+		</script>
+                                <script>/*<![CDATA[*/function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}/*]]>*/</script>
+                                <script>/*<![CDATA[*/// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();/*]]>*/</script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+    <div class="Footer_Upper">
+        <div class="Top_Footer">
+            <div>
+                <p class="footerhead"><b>Printer</b>Logic</p>
+                <p class="footertext">Thousands of enterprises use PrinterLogic's patent pending printer and driver management platform to deliver Mobile, Pull and Virtual printing, while eliminating print servers and providing a self-service portal that empowers end users to install their own printers.</p>
+            </div>
+            <div>
+                <p class="footerhead">About Us</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Contact Us</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/news-releases/" target="_blank" class="FooterLinks">Newsroom</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/events/" class="FooterLinks" target="_blank">Events</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/careers/" target="_blank" class="FooterLinks">Careers</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Support</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/printer-installer/support/" target="_blank" class="FooterLinks">Technical</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Sales</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Partners</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partners/" target="_blank" class="FooterLinks">Our Partners</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partner-log-in/" target="_blank" class="FooterLinks">Partner Login</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/become-a-partner/" target="_blank" class="FooterLinks">Become a Partner</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Resource Center</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/" target="_blank" class="FooterLinks">Resource Center</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/blog/" target="_blank" class="FooterLinks">Blog</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/case-studies/" target="_blank" class="FooterLinks">Case Studies</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/white-papers/" target="_blank" class="FooterLinks">White Papers</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/videos/" target="_blank" class="FooterLinks">Videos</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/third-party-research/" target="_blank" class="FooterLinks">Third Party Research</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Footer_Lower">
+        <div class="Bottom_Footer">
+            <div>
+                <p class="footertext">PrinterLogic Global HQ</p>
+                <p class="footertext">912 West 1600 South</p>
+                <p class="footertext">St. George, Utah 84770</p>
+                <p class="footertext">USA</p>
+            </div>
+            <div>
+                <p class="footertext">PrinterLogic - Europe</p>
+                <p class="footertext">PrinterLogic GmbH</p>
+                <p class="footertext">Otto-von-Guericke-Ring 7</p>
+                <p class="footertext">65205 Wiesbaden</p>
+                <p class="footertext">Germany</p>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/PrinterLogicEnterprisePrinting" target="_blank"><i class="fa fa-facebook-official fa-lg" style="color:#3b5998" aria-hidden="true"></i></a><a href="https://twitter.com/PrinterLogic" target="_blank"><i class="fa fa-twitter-square fa-lg" style="color:#00abec" aria-hidden="true"></i></a><a href="https://www.instagram.com/printerlogic/" target="_blank"><i class="fa fa-instagram fa-lg" style="color:#3f729b" aria-hidden="true"></i></a><a href="https://plus.google.com/+Printerlogic" target="_blank"><i class="fa fa-google-plus-square fa-lg" style="color:#dd4a38" aria-hidden="true"></i></a><a href="https://www.youtube.com/c/Printerlogic" target="_blank"><i class="fa fa-youtube-play fa-lg" style="color:#ba0000" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company-beta/3505000/" target="_blank"><i class="fa fa-linkedin-square fa-lg" style="color:#006e9e" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class="footertext">© 2017 PrinterLogic. All Rights Reserved</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/privacy-policy/" target="_blank" class="FooterLinks">Privacy</a> | <a href="https://www.printerlogic.com/sitemap/" target="_blank" class="FooterLinks">Sitemap</a></p>
+            </div>
+        </div>
+    </div>
+</html>

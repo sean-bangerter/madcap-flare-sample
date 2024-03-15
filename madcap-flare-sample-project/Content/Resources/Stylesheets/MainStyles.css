@@ -1,0 +1,2894 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	color: #404040;
+	font-family: Arial, Avenir, Myriad;
+	font-size: 1em;
+	line-height: 1.7em;
+}
+
+a
+{
+	color: #2d82dc;
+}
+
+a:link
+{
+	color: #2d82dc;
+}
+
+a:visited
+{
+	color: #2d82dc;
+}
+
+a:hover
+{
+	color: #20b0e6;
+	text-decoration: underline;
+}
+
+a.MCBreadcrumbsLink
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #000000;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #20b0e6;
+}
+
+img.ErrorImage
+{
+	width: auto;
+	height: 4in;
+}
+
+div.example
+{
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	margin-bottom: 15px;
+	padding: 20px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #e5f5ff;
+	border: solid 1px #a4ac67;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.GlossaryPageDefinition
+{
+	
+}
+
+div.GlossaryPageHeading
+{
+	
+}
+
+div.GlossaryPageTerm
+{
+	
+}
+
+div.ImagesFloatLeft
+{
+	clear: both;
+	float: left;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+div.ImagesFloatRight
+{
+	clear: both;
+	float: right;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+div.ImageIndent
+{
+	padding-left: 75px;
+}
+
+div.indent
+{
+	padding-left: 25px;
+}
+
+div.note
+{
+	background-color: #47484a;
+	background-image: url('../Images/NoteIcon.png');
+	background-repeat: no-repeat;
+	border: solid 1px #404040;
+	border-radius: 6px;
+	color: #b3b3b3;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 10px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	margin-top: 10px;
+}
+
+div.noteindent
+{
+	padding-left: 75px;
+}
+
+.noteInDiv
+{
+	mc-auto-number-format: '{b}{color #31b6f0}Note: {/color}{/b}';
+}
+
+div.quotation
+{
+	background-color: #e1e1e1;
+	background-image: url('../Images/QuotationMark.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	padding: 20px;
+	padding-left: 40px;
+}
+
+div.sideContent
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+}
+
+div.TightContent
+{
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+
+h1
+{
+	font-weight: normal;
+	margin-bottom: 8px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	border-bottom: solid 2px #f58033;
+	font-family: 'Franklin Gothic Book';
+	font-size: 30px;
+}
+
+h1.Appendix
+{
+	
+}
+
+h1.UserGuideBHeading
+{
+	
+}
+
+h2
+{
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	color: #f58033;
+	padding-left: 0px;
+	font-family: 'Franklin Gothic Book';
+	font-size: 1.5em;
+}
+
+h2.Release_Notes_Head
+{
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	color: #f58033;
+	padding-left: 0px;
+	font-family: 'Franklin Gothic Book';
+	font-size: 15pt;
+}
+
+h2.CheatSheet
+{
+	padding-top: 40px;
+	padding-left: 35px;
+}
+
+h2.CheatSheet1
+{
+	padding-left: 35px;
+}
+
+h3
+{
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 16px;
+	font-family: 'Franklin Gothic Book';
+	font-size: 1.5em;
+}
+
+img
+{
+	padding: 8px;
+	mc-thumbnail-max-height: auto;
+	mc-thumbnail-max-width: 250px;
+}
+
+img.AbsolutePosition
+{
+	padding: 5px;
+}
+
+img.ReduceButtonSize
+{
+	max-height: 25px;
+}
+
+img.Thumbnail
+{
+	mc-thumbnail: popup;
+	border: solid 1px #cccccc;
+	padding: 10px;
+	height: auto;
+}
+
+.thumbnailImg a:before
+{
+	content: url(../Images/zoomSmall-corner.png);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, arial, Verdana, sans-serif;
+}
+
+li
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	orphans: 2;
+	widows: 2;
+	margin-left: 0px;
+	font-size: 15px;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-size: .7em;
+	font-style: italic;
+	mc-breadcrumbs-prefix: 'You are here: ';
+}
+
+MadCap|dropDown
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	font-size: 12pt;
+	font-weight: normal;
+	border-radius: 5px;
+	padding-left: 0px;
+	border: none 1px #757477;
+	mc-closed-image: url('../Images/Bullet2Online.png');
+	mc-open-image: url('../Images/Bullet1Online_Down.png');
+}
+
+MadCap|dropDown.SecondLevel
+{
+	margin-left: 10px;
+	mc-closed-image: url('../Images/DropDownClosedSecondLevel.png');
+	mc-open-image: url('../Images/DropDownOpenSecondLevel.png');
+}
+
+MadCap|dropDown.CheatSheet
+{
+	margin-left: 20px;
+	border-radius: 10px;
+}
+
+MadCap|dropDownBody
+{
+	border-bottom: none 2px #20b0e6;
+	font-size: 12pt;
+}
+
+MadCap|dropDownBody.Final
+{
+	border-bottom: 0;
+}
+
+MadCap|dropDownHead
+{
+	font-size: 12pt;
+}
+
+MadCap|dropDownHotspot
+{
+	color: #404040;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+MadCap|dropDownHotspot:hover
+{
+	color: #0085c7;
+}
+
+MadCap|footnoteBlock
+{
+	
+}
+
+MadCap|footnotesBlock
+{
+	
+}
+
+MadCap|glossaryProxy
+{
+	
+}
+
+MadCap|indexProxy
+{
+	
+}
+
+MadCap|miniTocProxy
+{
+	
+}
+
+MadCap|popup
+{
+	color: #2D8DCC;
+	mc-thumbnail: popup;
+	mc-thumbnail-max-width: 0.5in;
+	mc-thumbnail-max-height: auto;
+}
+
+MadCap|popup:focus
+{
+	color: #2D8DCC;
+}
+
+MadCap|popup:hover
+{
+	color: #2D8DCC;
+}
+
+MadCap|popupHead
+{
+	color: #2D8DCC;
+	font-weight: bold;
+}
+
+MadCap|tocProxy
+{
+	
+}
+
+MadCap|xref
+{
+	font-weight: bold;
+	mc-format: 'For more information, see {paratext}.';
+	text-decoration: none;
+	color: #000000;
+}
+
+MadCap|xref:hover
+{
+	color: #20b0e6;
+}
+
+MadCap|xref.IndexPageNumber
+{
+	
+}
+
+ol
+{
+	list-style-image: none;
+	margin-left: 0px;
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+	margin-left: -10px;
+}
+
+ol ol ol
+{
+	list-style-type: lower-roman;
+	margin-left: -10px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font-size: 12pt;
+	font-family: 'Franklin Gothic Book';
+}
+
+p.CompanyInformation1
+{
+	margin-bottom: 4px;
+	margin-top: 14px;
+	font-weight: bold;
+}
+
+p.CompanyInformation2
+{
+	color: #6d6d6d;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+p.litextindent
+{
+	padding-left: 73px;
+}
+
+p.Copyright
+{
+	
+}
+
+p.CopyrightAddress
+{
+	
+}
+
+p.CopyrightHeading
+{
+	
+}
+
+p.CreatedUsingFlare
+{
+	
+}
+
+p.EmptyPageText
+{
+	
+}
+
+p.ExampleHeadText
+{
+	font-weight: bold;
+	page-break-after: avoid;
+	letter-spacing: 5px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+p.Figure
+{
+	
+}
+
+p.FirstPageOfChapter
+{
+	
+}
+
+p.FrameFooterText
+{
+	
+}
+
+p.FrameFooterText2
+{
+	
+}
+
+p.GlossaryPrintHead
+{
+	
+}
+
+p.indent
+{
+	padding-left: 42px;
+}
+
+p.IndexHeading
+{
+	
+}
+
+p.IndexPrintHead
+{
+	
+}
+
+p.ManualTitle1
+{
+	
+}
+
+p.ManualTitle2
+{
+	
+}
+
+p.ManualVersionNumber
+{
+	
+}
+
+p.MiniTOC1
+{
+	
+}
+
+p.Note
+{
+	background-repeat: no-repeat;
+	background-color: #fef8b0;
+	mc-auto-number-format: '{b}{color #f58033}NOTE: {/color}{/b}';
+	border: solid 1px #cccccc;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	display: block;
+	background-image: none;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+p.Note_Short
+{
+	background-repeat: no-repeat;
+	background-color: #fef8b0;
+	mc-auto-number-format: '{b}{color #f58033}NOTE: {/color}{/b}';
+	border: solid 1px #cccccc;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	display: block;
+	background-image: none;
+	background-position: left center;
+	padding-left: 30px;
+	width: 60%;
+}
+
+p.quotationname
+{
+	text-align: right;
+}
+
+p.TableCaption
+{
+	
+}
+
+p.TableTextCenterDark
+{
+	color: #000000;
+	margin-bottom: 2px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+p.TableTextDark
+{
+	color: #000000;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TableTextDarkEmphasis
+{
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TableTextHeadDark
+{
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TableTextLightEmphasis
+{
+	color: #ffffff;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TOCHeading
+{
+	
+}
+
+span.Emphasis
+{
+	font-weight: bold;
+}
+
+span.Italics
+{
+	font-style: italic;
+}
+
+span.FigureNum
+{
+	
+}
+
+span.SetOffFirstLevel
+{
+	color: #445879;
+	font-weight: bold;
+}
+
+span.SetOffSecondLevel
+{
+	color: #5e6914;
+	font-weight: bold;
+}
+
+span.TableNum
+{
+	
+}
+
+td
+{
+	margin: 8px;
+	vertical-align: top;
+}
+
+th
+{
+	color: #ffffff;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+tr
+{
+	
+}
+
+ul
+{
+	list-style-type: square;
+}
+
+ul.TextIndent
+{
+	padding-left: 80px;
+}
+
+ul.FirstLevelLessIndentation
+{
+	list-style-image: url('../Images/Bullet1.png');
+	margin-left: -10px;
+}
+
+ul ul
+{
+	list-style-image: url('../Images/Bullet2.png');
+	margin-left: -10px;
+}
+
+html.templateTopic div.sideContent
+{
+	display: none;
+}
+
+/* Style the tab */
+
+.tab
+{
+	overflow: hidden;
+	text-decoration: underline;
+}
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button
+{
+	background-color: inherit;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	border: solid 1px #cccccc;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover
+{
+	background-color: #e5f5ff;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active
+{
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+
+.tabcontent
+{
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+div.CheatSheet	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.CheatSheet::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.CheatSheet::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.CheatSheet > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.CheatSheet > div:nth-child(1)
+{
+	padding-left: 0%;
+	margin-left: 15px;
+	width: 66.667%;
+}
+
+div.CheatSheet > div:nth-child(2)
+{
+	margin-left: 65px;
+	width: 25%;
+}
+
+.MCPopupThumbnail
+{
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	max-width: 250px;
+	width: 100%;
+	padding: 0;
+}
+
+.MCPopupFullImage
+{
+	border: solid 1px #757477;
+	padding: 8px;
+	width: 200px;
+	border-radius: 0;
+	margin: 0;
+}
+
+.MCPopupContainer
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	border-radius: 0;
+}
+
+figcaption
+{
+	background-color: #a6a6a6;
+	color: #ffffff;
+	font-size: smaller;
+	margin: auto;
+	text-align: center;
+}
+
+MadCap|bodyProxy
+{
+	
+}
+
+h1.Other_Topics
+{
+	margin-right: 343px;
+}
+
+div.Bottom_Footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 20px;
+	display: block;
+}
+
+div.Bottom_Footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Bottom_Footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Bottom_Footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+}
+
+div.Bottom_Footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Bottom_Footer > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Bottom_Footer > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Top_Footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 20px;
+	display: block;
+}
+
+div.Top_Footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Top_Footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Top_Footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+}
+
+div.Top_Footer > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+	padding-right: 60px;
+}
+
+div.Top_Footer > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Top_Footer > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Top_Footer > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Top_Footer > div:nth-child(5)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+a.FooterLinks
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div.Bottom_Footer > div:nth-child(4)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+.fa
+{
+	background-color: transparent;
+	margin-right: 20px;
+}
+
+div.ImgIndent
+{
+	padding-left: 70px;
+}
+
+div.Mobile_Footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	display: none;
+	height: 40px;
+	border-top: solid 2px #f58033;
+	margin-top: 30px;
+}
+
+div.Mobile_Footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Mobile_Footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Mobile_Footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Mobile_Footer > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Mobile_Footer > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Mobile_Footer > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+p.Mobile_Footer
+{
+	color: #5a5a5a;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	text-align: right;
+	padding-right: 20px;
+	display: none;
+}
+
+div.AD_Object_Indented
+{
+	padding-left: 80px;
+}
+
+div.Client_Options	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+}
+
+div.Client_Options::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Client_Options::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Client_Options > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Client_Options > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Client_Options > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+figure
+{
+	background-color: #a6a6a6;
+	color: #ffffff;
+	font-size: smaller;
+	margin: auto;
+	text-align: center;
+}
+
+MadCap|toggler
+{
+	color: #f58033;
+}
+
+MadCap|menuProxy
+{
+	margin-right: 0px;
+	background-color: #cccccc;
+	font-size: 12pt;
+}
+
+div.Previous_Next	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+}
+
+div.Previous_Next::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Previous_Next::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Previous_Next > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+div.Previous_Next > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Previous_Next > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Previous	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Previous::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Previous::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Previous > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Previous > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.Next_Step	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Next_Step::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Next_Step::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Next_Step > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Next_Step > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+h4
+{
+	font-family: 'Franklin Gothic Book';
+}
+
+div.Warning	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-right: auto;
+}
+
+div.Warning::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Warning::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Warning > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+div.Warning > div:nth-child(1)
+{
+	width: 8.3333%;
+	margin-left: -16.667%;
+}
+
+div.Warning > div:nth-child(2)
+{
+	padding-left: 47px;
+	border: none 2px #ff0000;
+	width: 83.333%;
+	margin-left: 0%;
+}
+
+div.Advanced_Install_Options	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-right: auto;
+	margin-left: 5%;
+}
+
+div.Advanced_Install_Options::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Advanced_Install_Options::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Advanced_Install_Options > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Advanced_Install_Options > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Advanced_Install_Options > div:nth-child(2)
+{
+	width: 83.333%;
+	margin-left: 0%;
+}
+
+p.Warning
+{
+	color: #ff0000;
+}
+
+@media print
+{
+	body
+	{
+		color: #404040;
+		font-family: Arial, Avenir, Myriad;
+		font-size: 8pt;
+		line-height: 13px;
+		margin: 8px;
+	}
+
+	a:link
+	{
+		color: #2D8DCC;
+		font-weight: bold;
+	}
+
+	a:visited
+	{
+		color: #2D8DCC;
+	}
+
+	div.example
+	{
+		background-color: #f0ff86;
+		background-repeat: no-repeat;
+		border: solid 1px #a4ac67;
+		border-radius: 6px;
+		margin-bottom: 15px;
+		padding: 20px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		font-size: 9pt;
+	}
+
+	div.GlossaryPageHeading
+	{
+		border-bottom-color: #bed230;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		color: #bed230;
+		font-size: 11pt;
+	}
+
+	div.GlossaryPageTerm
+	{
+		color: #bed230;
+		font-size: 10pt;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	div.ImagesFloatLeft
+	{
+		clear: both;
+		float: left;
+		margin-right: 10px;
+		padding: 5px;
+	}
+
+	div.ImagesFloatRight
+	{
+		clear: both;
+		float: right;
+		margin-left: 10px;
+		padding: 5px;
+	}
+
+	div.note
+	{
+		background-color: #47484a;
+		background-image: url('../Images/NoteIcon.png');
+		background-repeat: no-repeat;
+		border: solid 1px #404040;
+		border-radius: 6px;
+		color: #b3b3b3;
+		padding-bottom: 10px;
+		padding-left: 40px;
+		padding-right: 10px;
+		padding-top: 10px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		margin-top: 10px;
+	}
+
+	p.note
+	{
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-color: #fef8b0;
+		mc-auto-number-format: '{b}{color #f58033}NOTE: {/color}{/b}';
+		border: solid 1px #cccccc;
+		padding-bottom: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		display: block;
+		padding-left: 30px;
+		background-image: none;
+	}
+
+	.noteInDiv
+	{
+		mc-auto-number-format: '{b}{color #bed230}Note: {/color}{/b}';
+	}
+
+	div.quotation
+	{
+		background-color: #e1e1e1;
+		background-image: url('../Images/QuotationMark.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		border-color: #b3b3b3;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 6px;
+		font-family: 'Century Gothic';
+		font-size: 0.9em;
+		font-style: italic;
+		font-weight: normal;
+		line-height: 18px;
+		padding: 20px;
+		padding-left: 40px;
+	}
+
+	h1
+	{
+		font-family: 'Century Gothic';
+		font-size: 22pt;
+		font-weight: normal;
+		line-height: 24pt;
+		margin-bottom: 20px;
+		margin-left: 0;
+		mc-heading-level: 2;
+		padding-left: 0;
+		padding-top: 0;
+		page-break-before: avoid;
+		width: 100%;
+		color: #bed230;
+	}
+
+	h1.AppendixTitle
+	{
+		mc-heading-level: 0;
+		page-break-before: avoid;
+	}
+
+	h1.BackmatterHeadings
+	{
+		color: #47484a;
+		font-family: 'Century Gothic';
+		font-size: 90pt;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 92pt;
+		margin: 0;
+		mc-heading-level: 4;
+		text-align: center;
+	}
+
+	h1.UserGuideBHeading
+	{
+		page-break-before: avoid;
+	}
+
+	h2
+	{
+		font-size: 12pt;
+		font-weight: normal;
+		line-height: 14pt;
+		mc-heading-level: 3;
+		page-break-before: always;
+	}
+
+	h3
+	{
+		font-size: 10pt;
+		font-weight: normal;
+		line-height: 12pt;
+		mc-heading-level: 0;
+	}
+
+	h4
+	{
+		font-size: 9pt;
+		font-weight: normal;
+		line-height: 11pt;
+		mc-heading-level: 0;
+	}
+
+	img.AbsolutePosition
+	{
+		padding: 5px;
+	}
+
+	img.FiftyPercent
+	{
+		max-width: 50%;
+		padding-bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+
+	img.OneHundredPercent
+	{
+		max-width: 100%;
+		padding-bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+
+	img.ReduceButtonSize
+	{
+		max-height: 25px;
+	}
+
+	img.SeventyFivePercent
+	{
+		max-width: 75%;
+		padding-bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+
+	li
+	{
+		margin-bottom: 6px;
+		margin-top: 6px;
+		orphans: 2;
+		widows: 2;
+	}
+
+	MadCap|glossaryProxy
+	{
+		border-top: none;
+		color: #e1e1e1;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top: none;
+		color: #e1e1e1;
+	}
+
+	MadCap|miniTocProxy
+	{
+		border-top: none;
+		margin-left: 0.25in;
+		margin-right: 0.25in;
+		padding-left: 0px;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+		font-size: 16pt;
+		color: #000000;
+	}
+
+	MadCap|xref
+	{
+		color: #404040;
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	MadCap|xref.IndexPageNumber
+	{
+		color: #BED230;
+	}
+
+	ol
+	{
+		list-style-image: none;
+	}
+
+	ol ol
+	{
+		list-style-type: lower-alpha;
+		margin-left: 30px;
+	}
+
+	ol ol ol
+	{
+		list-style-type: lower-roman;
+		margin-left: 30px;
+	}
+
+	p
+	{
+		margin-bottom: 8px;
+		margin-top: 8px;
+		font-size: 12pt;
+		line-height: 20pt;
+		font-family: 'Franklin Gothic Book';
+	}
+
+	p.ChapterNumber
+	{
+		color: #47484a;
+		font-size: 90pt;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 92pt;
+		margin: 0;
+		mc-auto-number-position: inside-head;
+		mc-auto-number-format: 'CHAPTER {chapnum}';
+		mc-heading-level: 1;
+		text-align: center;
+	}
+
+	p.Copyright
+	{
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+
+	p.CopyrightAddress
+	{
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	p.CopyrightHeading
+	{
+		margin-top: 1in;
+		page-break-before: always;
+	}
+
+	p.CreatedUsingFlare
+	{
+		font-weight: bold;
+		margin-top: 18px;
+	}
+
+	p.EmptyPageText
+	{
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	p.ExampleHeadText
+	{
+		font-weight: bold;
+		page-break-after: avoid;
+		letter-spacing: 5px;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+
+	p.Figure
+	{
+		color: #404040;
+		font-style: italic;
+		mc-auto-number-class: FigureNum;
+		mc-auto-number-format: 'CF:Figure {chapnum}-{n+} ';
+		margin-left: 10px;
+		padding-bottom: 10px;
+	}
+
+	p.FirstPageOfChapter
+	{
+		color: #e1e1e1;
+	}
+
+	p.FrameFooterText
+	{
+		font-family: 'Century Gothic';
+		font-size: 24pt;
+	}
+
+	p.FrameFooterText2
+	{
+		color: #404040;
+		font-family: 'Century Gothic';
+		font-size: 11pt;
+	}
+
+	p.IndexHeading
+	{
+		font-size: 11pt;
+		padding-top: 16px;
+		text-align: left;
+	}
+
+	p.ManualTitle1
+	{
+		font-family: 'Century Gothic';
+		font-size: 9pt;
+		margin-bottom: 0;
+		margin-top: 2.00in;
+		color: #f58033;
+		line-height: 2em;
+		margin-left: 0.3in;
+	}
+
+	p.ManualTitle2
+	{
+		font-family: 'Century Gothic';
+		margin-bottom: 0;
+		margin-top: 0;
+		color: #f58033;
+		line-height: 1in;
+		font-size: 16pt;
+		margin-left: 0.3in;
+	}
+
+	p.ManualVersionNumber
+	{
+		font-family: 'Century Gothic';
+		font-size: 12pt;
+		margin-top: 12pt;
+		margin-left: 0.3in;
+		color: #757477;
+	}
+
+	p.MiniTOC1
+	{
+		color: #e1e1e1;
+		font-size: 9pt;
+		font-weight: normal;
+	}
+
+	p.quotationname
+	{
+		text-align: right;
+	}
+
+	p.TableCaption
+	{
+		color: #404040;
+		font-style: italic;
+		mc-auto-number-class: TableNum;
+		mc-auto-number-format: 'CT:Table {chapnum}-{n+} ';
+		padding-bottom: 0;
+		padding-top: 12px;
+	}
+
+	p.TableTextCenterDark
+	{
+		color: #000000;
+		margin-bottom: 2px;
+		margin-top: 8px;
+		text-align: center;
+	}
+
+	p.TableTextDark
+	{
+		color: #000000;
+		margin-bottom: 2px;
+		margin-top: 8px;
+	}
+
+	p.TableTextDarkEmphasis
+	{
+		color: #000000;
+		font-weight: bold;
+		margin-bottom: 2px;
+		margin-top: 8px;
+	}
+
+	p.TableTextHeadDark
+	{
+		color: #000000;
+		font-weight: bold;
+		margin-bottom: 2px;
+		margin-top: 8px;
+	}
+
+	p.TableTextLightEmphasis
+	{
+		color: #ffffff;
+		font-weight: bold;
+		margin-bottom: 2px;
+		margin-top: 8px;
+	}
+
+	p.TOC1
+	{
+		color: #bed230;
+		font-size: 12pt;
+		font-weight: normal;
+		margin-bottom: 6px;
+		margin-top: 12px;
+		mc-leader-format: 'none';
+		mc-pagenum-display: none;
+		page-break-after: avoid;
+	}
+
+	p.TOC2
+	{
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 0.25in;
+		margin-top: 2px;
+		page-break-after: avoid;
+		color: #757477;
+		font-size: 12pt;
+		line-height: 24pt;
+		padding: 0px 0px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+
+	p.TOC3
+	{
+		color: #e1e1e1;
+		font-size: 8pt;
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 0.35in;
+		margin-top: 2px;
+	}
+
+	p.TOC4
+	{
+		color: #bed230;
+		font-size: 12pt;
+		font-weight: normal;
+		margin-bottom: 6px;
+		margin-left: 0;
+		margin-top: 12px;
+	}
+
+	p.TOCHeading
+	{
+		color: #47484a;
+		font-size: 90pt;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 92pt;
+		margin: 0;
+		mc-heading-level: 0;
+		text-align: center;
+	}
+
+	span.Emphasis
+	{
+		font-weight: bold;
+	}
+
+	span.FigureNum
+	{
+		color: #bed230;
+		font-style: normal;
+	}
+
+	span.SetOffFirstLevel
+	{
+		color: #5e6914;
+		font-weight: bold;
+	}
+
+	span.SetOffSecondLevel
+	{
+		color: #445879;
+		font-weight: bold;
+	}
+
+	span.TableNum
+	{
+		color: #bed230;
+		font-style: normal;
+	}
+
+	td
+	{
+		margin: 8px;
+		vertical-align: top;
+	}
+
+	th
+	{
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+
+	tr
+	{
+		page-break-inside: avoid;
+	}
+
+	ul
+	{
+		list-style-image: url('../Images/Bullet1.eps');
+	}
+
+	ul.FirstLevelLessIndentation
+	{
+		list-style-image: url('../Images/Bullet1.eps');
+		margin-left: 30px;
+	}
+
+	ul ul
+	{
+		list-style-image: url('../Images/Bullet2.eps');
+		margin-left: 30px;
+	}
+
+	img
+	{
+		height: auto;
+		border-bottom-color: transparent;
+		border: none 0px transparent;
+		width: 4.5in;
+	}
+
+	h1.Other_Topics
+	{
+		width: 100%;
+		margin-right: 0px;
+		line-height: 25px;
+		font-size: 22px;
+		color: #f58033;
+	}
+
+	MadCap|dropDownHead
+	{
+		font-size: 16px;
+		font-family: 'Franklin Gothic Book';
+		text-decoration: underline;
+	}
+
+	MadCap|dropDownBody
+	{
+		font-size: 16px;
+		font-family: 'Franklin Gothic Book';
+	}
+
+	MadCap|dropDown
+	{
+		font-family: 'Franklin Gothic Book';
+		font-size: 16pt;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		text-decoration: underline;
+	}
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.CheatSheet > div:nth-child(1)
+	{
+		margin-left: 15px;
+		width: 66.667%;
+	}
+
+	div.CheatSheet > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 65px;
+	}
+
+	div.Footer_Upper
+	{
+		display: none;
+	}
+
+	div.Footer_Lower
+	{
+		display: none;
+	}
+
+	h1.Other_Topics
+	{
+		margin-right: 400px;
+	}
+
+	div.Bottom_Footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(3)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(4)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(5)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(4)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer
+	{
+		display: block;
+	}
+
+	p.Mobile_Footer
+	{
+		display: block;
+		text-align: right;
+		margin-bottom: 8px;
+		margin-top: 8px;
+		padding-right: 20px;
+	}
+
+	div.Top_Footer
+	{
+		display: none;
+	}
+
+	div.Bottom_Footer
+	{
+		display: none;
+	}
+
+	div.Bottom_Footer > div
+	{
+		display: none;
+	}
+
+	div.Top_Footer > div
+	{
+		display: none;
+	}
+
+	div.AD_Object_Indented
+	{
+		
+	}
+
+	div.Client_Options > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Client_Options > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Previous_Next > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Previous_Next > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Previous > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Next_Step > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Warning > div:nth-child(1)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Warning > div:nth-child(2)
+	{
+		padding-left: 47px;
+		width: 66.667%;
+		margin-left: 0%;
+	}
+
+	div.Advanced_Install_Options > div:nth-child(1)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Advanced_Install_Options > div:nth-child(2)
+	{
+		margin-left: 0%;
+		width: 83.333%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.CheatSheet > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.CheatSheet > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper
+	{
+		display: none;
+	}
+
+	div.Footer_Lower
+	{
+		display: none;
+	}
+
+	div.Bottom_Footer > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(5)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	a.FooterLinks
+	{
+		
+	}
+
+	div.Bottom_Footer > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.fa
+	{
+		
+	}
+
+	div.ImgIndent
+	{
+		
+	}
+
+	div.Mobile_Footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Mobile_Footer
+	{
+		display: block;
+	}
+
+	p.Mobile_Footer
+	{
+		display: block;
+		text-align: right;
+		margin-bottom: 8px;
+		margin-top: 8px;
+		padding-right: 20px;
+	}
+
+	div.Top_Footer
+	{
+		display: none;
+	}
+
+	div.Bottom_Footer
+	{
+		display: none;
+	}
+
+	div.Bottom_Footer > div
+	{
+		display: none;
+	}
+
+	div.Top_Footer > div
+	{
+		display: none;
+	}
+
+	div.Client_Options > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Client_Options > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Previous_Next > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Previous_Next > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	.previous_next:active
+	{
+		
+	}
+
+	div.Previous_Next_Container
+	{
+		
+	}
+
+	div.Previous > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Next_Step > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Warning > div:nth-child(1)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Warning > div:nth-child(2)
+	{
+		padding-left: 47px;
+		width: 58.333%;
+		margin-left: 0%;
+	}
+
+	div.Advanced_Install_Options > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Advanced_Install_Options > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	p.Warning
+	{
+		
+	}
+}
+
+h2.StepsHeading
+{
+	padding-left: 5px;
+	color: #f58033;
+}
+
+MadCap|snippetBlock.Steps
+{
+	padding-left: 40px;
+}
+
+p.StepsParagraph
+{
+	padding-left: 40px;
+}
+
+ol.indent
+{
+	padding-left: 75px;
+}
+
+img.liimage
+{
+	padding-left: 60px;
+}
+
+div.liimage
+{
+	padding-left: 60px;
+}
+
+h3.Steps
+{
+	font-weight: normal;
+	color: #f58033;
+	text-decoration: none;
+	font-size: 1.3em;
+	padding-left: 30px;
+}
+
+div.dropdown
+{
+	padding-left: 90px;
+}
+
+div.StepsIndent
+{
+	padding-left: 20px;
+}
+
+img.thumb
+{
+	mc-thumbnail-max-height: auto;
+	mc-thumbnail-max-width: 100px;
+	padding: 8px;
+}
+
+figcaption.Cheat_Sheets
+{
+	color: #ffffff;
+	font-size: smaller;
+	background-color: #a6a6a6;
+	margin: auto;
+	text-align: center;
+}
+
+hr.CheatSheet
+{
+	color: #2a4888;
+	border-left-color: #3255A1;
+	border-right-color: #3255A1;
+	border-top-color: #3255A1;
+	border: solid 2px #3255A1;
+	border-bottom-color: #3255A1;
+}
+
+p.CheatSheetItem
+{
+	color: #3255A1;
+	font-family: 'Franklin Gothic Book';
+	font-weight: bold;
+	font-size: 18px;
+}
+
+hr.h1heading
+{
+	border: solid 2px #f58033;
+}
+
+div.thumbnailImg
+{
+	background-color: transparent;
+	border: solid 1px #757477;
+	line-height: 0;
+	margin: 8px;
+	margin-left: 8px;
+	max-width: 250px;
+	padding: 8px;
+	padding-left: 8px;
+	position: relative;
+}
+
+div.CheatSheetDropDown
+{
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	border: solid 1px #B5B7B9;
+}
+
+div.Footer_Upper
+{
+	background-color: #5d5c5d;
+	/*display: block; - Commented out to get mobile size display to none*/
+	height: 300px;
+	width: 100%;
+}
+
+div.Footer_Lower
+{
+	background-color: #2a292a;
+	height: 200px;
+	width: 100%;
+	/*display: block; - Commented out to get mobile size display to none*/
+}
+
+div.CheatSheetBody
+{
+	width: 50%;
+}
+
+p.footerhead
+{
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: #ffffff;
+}
+
+p.footertext
+{
+	font-size: 14px;
+	color: #ffffff;
+}
+
+a.FooterLinks:visited
+{
+	
+}
+
+a.FooterLinks:hover
+{
+	text-decoration: none;
+}
+
+h2.CheatSheetSubhead
+{
+	padding-left: 0px;
+}
+
+MadCap|xref.Two_Links
+{
+	mc-format: 'For more information, see {paratext} or {paratext}.';
+}
+
+img.Components
+{
+	height: auto;
+	border-color: #757477;
+	border-width: 2px;
+	border: solid 1px #757477;
+	width: 80%;
+}
+
+div.Cheat_Sheet_Overview
+{
+	background-color: #f2f2f2;
+	padding-bottom: 15px;
+	border-bottom: solid 4px #3255a1;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h2.indent
+{
+	
+}
+
+div.Requirements_Indent
+{
+	padding-left: 50px;
+}
+
+p.indent_para_text
+{
+	padding-left: 50px;
+}
+
+p.h2_text
+{
+	padding-left: 50px;
+}
+
+div.table_indent
+{
+	padding-left: 50px;
+}
+
+div.h2_image_indent
+{
+	padding-left: 50px;
+}
+
+MadCap|dropDownHead.faq
+{
+	padding-left: 5px;
+	font-weight: normal;
+	border-radius: 5px;
+	background-color: #d5eef8;
+}
+
+MadCap|dropDown.faq
+{
+	border: solid 1px #757477;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+MadCap|dropDownBody.faq
+{
+	margin-left: 0px;
+	padding-left: 20px;
+	padding-right: 10px;
+	background-color: #f2f2f2;
+}
+
+MadCap|dropDown.faq_short
+{
+	font-weight: normal;
+	width: 62%;
+	border: solid 1px #cccccc;
+	margin-bottom: 10px;
+}
+
+div.thumbnail_Img_Steps
+{
+	background-color: transparent;
+	border: solid 1px #757477;
+	line-height: 0;
+	margin: 8px;
+	max-width: 250px;
+	padding: 8px;
+	padding-left: 8px;
+	position: relative;
+	margin-left: 80px;
+}
+
+h4.Steps
+{
+	padding-left: 15px;
+	color: #0085c7;
+}
+
+div.menu_steps
+{
+	border: none 2px #757477;
+	width: 55%;
+	padding-right: 20px;
+}
+
+p.FAQs
+{
+	color: #f58033;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+}
+
+p.H2_Fake
+{
+	font-variant: all-petite-caps;
+	font-weight: 200;
+	font-family: 'Franklin Gothic Book';
+	margin-bottom: 15px;
+	line-height: 30pt;
+	font-size: 26pt;
+	border-bottom: solid 1px #cccccc;
+	border-top: solid 1px #cccccc;
+	width: 60%;
+	background-color: transparent;
+	margin-top: 5px;
+}
+
+.backToTop
+{
+	display: none;
+	position: fixed;
+	bottom: 65px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 10;
+	/* fallback for older browsers */
+	border-radius: 5px;
+	color: #fff;
+	padding-left: 35px;
+	width: 125px;
+	background: url('../images/arrow.png') no-repeat 0 0 rgba(0,0,0,0.7);
+	background-color: #f58033;
+	padding-top: 4px;
+	height: 35px;
+}
+
+p.StepsIntroParagraph
+{
+	padding-left: 25px;
+}
+
+div.StepsNote
+{
+	padding-left: 40px;
+}
+
+p.Next_Previous_Step
+{
+	height: 40px;
+}
+
+p.Previous_Next_Text
+{
+	color: #cccccc;
+	text-align: center;
+	font-size: 14px;
+}
+
+h4.Options
+{
+	padding-left: 40px;
+	font-family: 'Franklin Gothic Book';
+	font-weight: normal;
+	font-size: 1.4em;
+	color: #3255a1;
+}
+
+h3.Blue
+{
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #f58033;
+	padding-left: 0px;
+}
+
+h4.h4_Options
+{
+	font-family: 'Franklin Gothic Book';
+	padding-left: 42px;
+	color: #8ec228;
+}
+
+p.StepsParagraphText
+{
+	padding-left: 40px;
+}
+
+p.Intro_Paragraph
+{
+	padding-left: 30px;
+}
+
+div.Step_Option
+{
+	padding-left: 100px;
+}
+
+div.IndentStep
+{
+	padding-left: 50px;
+}
+
+div.Jump_To_Step
+{
+	border-bottom: solid 1px #757477;
+	border-top: solid 1px #757477;
+}
+
+MadCap|dropDown.Jump_To_Step
+{
+	width: 60%;
+	margin-left: 0px;
+	border: none 2px #000000;
+	mc-image-position: right;
+	padding-bottom: 0px;
+	mc-closed-image: url('../Images/Bullet2OnlineLight.png');
+	mc-open-image: url('../Images/Bullet2OnlineLightDown.png');
+}
+
+MadCap|dropDownHead.Jump_To_Step
+{
+	font-size: 12pt;
+	text-decoration: none;
+	width: 150px;
+	border-top-right-radius: 0px 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px 0px;
+	border-bottom-left-radius: 0px 0px;
+	border-radius: 4px;
+	color: #8dc448;
+	background-color: transparent;
+}
+
+MadCap|dropDownBody.Jump_To_Step
+{
+	width: 100%;
+}
+
+MadCap|dropDownHotspot.Jump_To_Step
+{
+	vertical-align: middle;
+	text-align: center;
+	color: #8dc448;
+}
+
+h2.Option
+{
+	border-bottom: solid 1px #757477;
+	border-top: solid 1px #757477;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 65%;
+}
+
+div.H4_Text
+{
+	padding-left: 40px;
+}
+
+div.Note_Short
+{
+	width: 65%;
+}
+
+h3.Quick_Start_Substep
+{
+	color: #8dc448;
+	font-size: 1.3em;
+	padding-left: 20px;
+}
+
+div.Note_Step
+{
+	padding-left: 43px;
+}
+
+p.Code
+{
+	padding-left: 60px;
+	text-decoration: inherit;
+	font-family: Consolas;
+	word-wrap: break-word;
+}
+
+span.Code
+{
+	font-family: 'Courier New';
+	font-size: 16px;
+}
+
+div.Gray_Background
+{
+	background-color: #CCCCCC;
+	padding: 10px;
+}
+
+h3.Release_Notes
+{
+	font-family: 'Franklin Gothic Book';
+	text-decoration: underline;
+	font-size: medium;
+	padding-left: 20px;
+}
+
+img.warning
+{
+	height: auto;
+	width: 87px;
+	margin-left: 106px;
+}
+
+MadCap|dropDownHotspot.faq
+{
+	font-size: 14px;
+}
+
+span.Underline
+{
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+div.h4_option_text
+{
+	padding-left: 60px;
+}
+
+div.Code_Short
+{
+	font-family: 'Franklin Gothic Book';
+	width: 60%;
+	word-wrap: break-word;
+}
+

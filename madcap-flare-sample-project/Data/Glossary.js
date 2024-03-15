@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Glossary_Chunk',terms:[{t:'Continuous Replication',c:0},{t:'Release Printer',c:0},{t:'Schedule Replication',c:0},{t:'Variable',c:0},{t:'Virtual Pull Print Queue',c:0}]});

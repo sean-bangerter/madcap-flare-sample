@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_OnPrem_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Administrator|Printer Deployment">
+    <script src="https://use.fontawesome.com/343d1c540f.js">
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Deploy a Printer</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/backtotop.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.printerlogic.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="content">
+                                    <div id="contentBody">
+                                        <div class="row collapse">
+                                            <div class="sideContent">
+                                                <div class="clearfix">
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_OnPrem_TopicToolBar mc-component nocontent">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                            </button>
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="nocontent menu _Skins_OnPrem_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/PrinterInstaller__PrinterInstallerOnlineHelp.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                            <h1 class="Other_Topics">Deploy a Printer</h1>
+                                            <p>
+                                                <head><title>Secure Release Printing</title>
+                                                </head>
+                                            </p>
+                                            <p>
+                                                <!-- Tab links -->
+                                            </p>
+                                            <div class="tab">
+                                                <button class="tablinks active" onclick="openCity(event, 'Summary')" id="defaultOpen">Summary</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Faqs')">FAQs</button>
+                                                <button class="tablinks" onclick="openCity(event, 'AD')">Set Up Deployment</button>
+                                            </div>
+                                            <p>
+                                                <!-- Tab content -->
+                                                <!-- Summary Tab -->
+                                            </p>
+                                            <div id="Summary" class="tabcontent" style="display:block">
+                                                <div class="ImagesFloatLeft">
+                                                    <p>
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_With_Objects.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="503" src="../../Images/OnPrem/AC_Deploy_Tab_With_Objects_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                        <div>
+                                                            <figcaption>Deploy Tab</figcaption>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <p>Printer Deployment in <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> is the process of installing and updating a print queue and driver that is installed on one or more workstations. However, before printers can be deployed to workstations, you must upload the driver to a workstation through the Admin Console.</p>
+                                                <p>Driver deployment without <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> could be an arduous process of manually updating drivers through GPO, and worse, piecemeal if you have direct IP printers.</p>
+                                                <p>With <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span>, printer deployments take the print queue and driver you have uploaded to the Admin Console and easily installs them on one or more workstations. Any updates you make to the print queue or driver will be updated on the workstation the next time the client installed on the workstation checks in with the server. Any time you upload a new version of the driver to the Admin Console, then the next time the client checks in with the server, the driver on the workstation will be updated.</p>
+                                                <div>
+                                                    <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>Bear in mind the difference between printer deployment and driver management. A common mistake that some end-users run into is that they upload the drivers and print queues in the Admin Console to be installed on the workstations, and they think that the drivers are updated automatically. This is not true. You can upload a new version of the driver to the Admin Console, and when the client (installed on the workstation) checks-in with the server, the updated driver will be installed on the workstation.<br /></p>
+                                                </div>
+                                                <p>When you select a printer object in the tree view, you can then click the Drivers/Profiles tab to see which drivers and profiles are applied to the printer object. As such, you can then click the Deploy tab to see users, groups, computers, IP address ranges, MAC address and other which are updated when you upgrade the drivers and/or profiles in the Drivers/Profiles tab. When the end-user logs into the Self-service Portal or the Release Portal, then the upgraded drivers and/or profiles are automatically applied to their workstation. Let's put this into context.</p>
+                                                <p>John, for example, is the <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> administrator for his company. He logs into the Admin Console and clicks the KM Color printer object in the tree view (the KM printer object is associated with the Konica Minolta color printer in their office). He then clicks the Drivers/Profiles tab, which shows a 64-bit Windows 10 driver that was applied to the KM Color printer object about a month ago. John has an driver that he wants to use to replace the existing driver. He goes through the process of upgrading the driver. When he completes the upgrade process, John clicks the Deploy tab, which shows a group of eight users who will receive the upgrade. John then clicks Save. At this point, the next time each user in that group logs into the Self-service Portal or the Release Portal, then the updated driver from the KM Color printer object will automatically be updated on their workstation. The next time the end-user sends a print job to the KM color printer, their workstation will use the updated driver.</p>
+                                            </div>
+                                            <div id="Faqs" class="tabcontent" style="display:block">
+                                                <!-- Tab 2 -->
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />Can I sync my printer deployment?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <p>The Deploy tab enables you to create printer deployments, the purpose of which is to install drivers and profiles on the workstations of the end-users selected in the deployment. Because you can automatically deploy the drivers to the workstation, the Admin Console also provides an option to remove the deployed drivers on a workstation if a deployment is removed from the Deploy tab. This option is called Sync Deployment. However, there are times that you want to remove a deployment from the Deploy tab, and you have the <span class="Emphasis">Sync Deployment</span> setting enabled, which means that when you remove the deployment, the drivers associated with the printer object that uses the deployment will be removed from the workstations of the end-users associated with the deployment.</p>
+                                                        <p>For example, the tree view has a printer object named <span class="Emphasis">Printer A</span>, which has <span class="Emphasis">Driver B</span> and <span class="Emphasis">Profile B</span> assigned to it (in the Drivers/Profiles tab). Additionally, a group consisting of end-users John Smith, Joe Jackson, and Jeff Greene have been added to a deployment called Deployment D (in the Deploy tab). As a result, John Smith and Joe Jackson automatically have Driver B and Profile B installed on their computer, but Jeff already has that driver and profile added to his workstation. Moreover, the <span class="Emphasis">Sync Deployment</span> setting is enabled in the Admin Console, so if <span class="Emphasis">Deployment D</span> is ever deleted, then the driver will be removed from workstations belonging to the three end-users.</p>
+                                                        <p>The Admin Console provides an additional option to retain the driver on end-user workstations if that driver existed on the workstation prior to the deployment being created. This option is called <span class="Emphasis">Keep Existing Printers</span>. The example above states that two end-users did not have the driver installed when the deployment was created, but one end-user did. If you enable both the <span class="Emphasis">Sync Delete</span> option and the <span class="Emphasis">Keep Existing Printers</span> option, then when the deployment is deleted, the drivers will be removed from the workstations of John Smith and Joe Jackson (who had the drivers installed when the deployment was created), and Jeff Greene's workstation will retain the driver (because it was installed on his workstation before the deployment was created. The following steps describe the process for keeping existing printers on workstations when a deployment is deleted.</p>
+                                                        <ol>
+                                                            <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">Client</span>.</li>
+                                                            <li value="2">In the TCP/IP Windows Shared Printer Settings section, click <span class="Emphasis">Sync Deployment</span>.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Client_Settings_Sync_Deployment.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="223" src="../../Images/OnPrem/AC_Client_Settings_Sync_Deployment_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="3">Click <span class="Emphasis">Keep Existing Printers</span>.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Client_Settings_Keep_Existing.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="225" src="../../Images/OnPrem/AC_Client_Settings_Keep_Existing_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="4">Click <span class="Emphasis">Save</span>.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the difference between a container and an organizational unit?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Organizational units (OU) differ from containers in that the OU can have a Group Policy Object (GPO) linked to it whereas the container cannot.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />How do I deploy printers as shared?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <ol>
+                                                            <li value="1">In the Admin Console tree view, select the printer object you would like to deploy.</li>
+                                                            <li value="2">Click the Deploy tab.</li>
+                                                            <li value="3">Click <span class="Emphasis">Add</span> and then select <span class="Emphasis">Active Directory</span> &gt; <span class="Emphasis">User, Computer, or Group</span>.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="516" src="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="4">In the <span class="Emphasis">Enter the object names to select</span> field, type a partial or full name of the computer to which you would like to deploy the printer.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AD_Select_Users_Computers_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1001" data-mc-height="381" src="../../Images/OnPrem/AD_Select_Users_Computers_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="5">Click <span class="Emphasis">Check Names</span>.</li>
+                                                            <li value="6">Select the computer.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AD_Select_Computer.png"><img class="MCPopupThumbnail img" data-mc-width="560" data-mc-height="326" src="../../Images/OnPrem/AD_Select_Computer_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="7">Click <span class="Emphasis">OK</span>.</li>
+                                                            <li value="8">Click <span class="Emphasis">OK</span> again.</li>
+                                                            <li value="9">When the computer appears in the deployment list, click <span class="Emphasis">Share</span>.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Share.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="522" src="../../Images/OnPrem/AC_Deploy_Tab_Share_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="10">Click <span class="Emphasis">Save</span>.</li>
+                                                            <li value="11">Click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">Client</span>.</li>
+                                                            <li value="12">In the TCP/IP Printer settings section, click <span class="Emphasis">Create connections to shared TCP/IP printers</span>.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Client_Settings_Create_Connections_To_Shared.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="503" src="../../Images/OnPrem/AC_Client_Settings_Create_Connections_To_Shared_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="13">Click <span class="Emphasis">Save</span>.</li>
+                                                        </ol>
+                                                        <div class="noteindent">
+                                                            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f58033;&quot; class=&quot;mcFormatColor&quot;&gt;NOTE: &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f58033;" class="mcFormatColor">NOTE: </span></b></span></span>When you have finished the setup, a recommended best practice is to refresh the <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> client on the server.<br /></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the printer deployment priority?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody dropDownBodyfaq">
+                                                        <p>Items higher in the following list take priority over items lower in the list.</p>
+                                                        <ul>
+                                                            <li value="1">User</li>
+                                                            <li value="2">Computer</li>
+                                                            <li value="3">Group (user membership)</li>
+                                                            <li value="4">Indirect user group (group is member from assigned group)</li>
+                                                            <li value="5">Container user</li>
+                                                            <li value="6">Container computer</li>
+                                                            <li value="7">Child-container user</li>
+                                                            <li value="8">Child-container computer</li>
+                                                            <li value="9">IP address range (smaller range)</li>
+                                                            <li value="10">IP&#160;address range (larger range)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />How do I set a workstation default printer from Printer Installer?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ol>
+                                                            <li value="1">In the Admin Console tree view, select a printer object.</li>
+                                                            <li value="2">Click the Deploy tab.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="3">Find the object to set as the default.</li>
+                                                            <li value="4">In the Set Default field, select <span class="Emphasis">Once</span> or <span class="Emphasis">Always</span>.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Set_Default.png"><img class="MCPopupThumbnail img" data-mc-width="1090" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_Set_Default_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="5">Click <span class="Emphasis">Save</span>.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />How do I set an IP range to deploy printers automatically?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>An IP address range can be used to deploy to workstations that have IP&#160;addresses that fall within the range. Select an IP address range object in the Admin Console tree view and then click the Deploy tab. Any objects you assign to the Deploy tab can be installed on the workstations that have IP addresses falling within the given range.</p>
+                                                        <p>For example, let's assume you have created an IP&#160;address range object in the Admin Console tree view. The name of this object is <span class="Emphasis">IP Range 1</span>, and it is currently selected in your tree view. Furthermore, two employees, Mary and Shelley, have workstations with IP addresses that fall within the range set in IP&#160;Range 1. Finally, <span class="Emphasis">Printer 1</span> is a printer object that has been added to the Deploy tab for IP&#160;Range 1. With this setup, Printer 1 can be installed on both Mary's workstation and on Shelley's workstation because their workstations have IP addresses within the range set for IP&#160;Range 1.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />Can I automatically remove deployed printers?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Because <span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> enables end-users to install printers on their workstations, the Admin Console provides an option to remove a printer from the workstations on which it has been installed if you remove the printer object corresponding to that printer from the Admin Console. For example, the Admin Console tree view has a printer object named Printer A, which also appears in the Self-service Portal. As a result, forty end-users have installed the printer from the Self-service Portal, so the drivers and profiles assigned to Printer A are installed on the end-users' workstations.</p>
+                                                        <p><span class="GeneralPrinterInstaller" data-mc-conditions="General.NoHosted">Printer Installer</span> has an Sync Delete option that enables you to automatically remove the printer from end-users' workstations if you delete the printer object from the tree view. The value of this feature is that you do not have to remove the printer drivers and profiles individually from each workstation. Furthermore, you can deselect this feature, which leaves the printer drivers and profiles on the workstations even if you remove the printer object from the tree view. Using the example above, if you have <span class="Emphasis">Sync Delete</span> enabled and you delete the Printer A object from the tree view, then the drivers and profiles associated with the Printer A object will automatically be removed from the 40 workstations on which they are installed. The following steps describe the process for enabling Sync Delete to automatically remove printer drivers and profiles if the printer object is deleted from the tree view. The Admin Console also provides an option to remove printer drivers and profiles from workstations that have been assigned via a deployment set in the Deploy tab. </p>
+                                                        <ol>
+                                                            <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Settings</span> &gt; <span class="Emphasis">Client</span>.</li>
+                                                            <li value="2">In the TCP/IP Windows Shared Printer Settings section, click <span class="Emphasis">Sync Delete</span> to select it.</li>
+                                                        </ol>
+                                                        <div class="ImgIndent">
+                                                            <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Client_Settings_Sync_Delete.png"><img class="MCPopupThumbnail img" data-mc-width="1060" data-mc-height="247" src="../../Images/OnPrem/AC_Client_Settings_Sync_Delete_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="3">Click <span class="Emphasis">Save</span>.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="AD" class="tabcontent" style="display:block">
+                                                <!-- Tab 2 -->
+                                                <div class="Jump_To_Step ">
+                                                    <p>Jump to an Option:</p>
+                                                    <div class="indent">
+                                                        <p>Option 1:&#160;<a href="#User">Deploy by Active Directory User</a></p>
+                                                        <p>Option 2: <a href="#Computer">Deploy by Active Directory Computer</a></p>
+                                                        <p>Option 3: <a href="#Group">Deploy by Active Directory Group</a></p>
+                                                        <p>Option 4: <a href="#Container">Deploy by Active Directory Container</a></p>
+                                                        <p>Option 5: <a href="#OU">Deploy by Active Directory Organizational Unit (OU)</a></p>
+                                                        <p>Option 6: <a href="#IP_Address">Deploy by IP&#160;Address</a></p>
+                                                        <p>Option 7:&#160;<a href="#Hostname">Deploy by Hostname</a></p>
+                                                        <p>Option 8: <a href="#Mac_Address">Deploy by Mac Address</a></p>
+                                                        <p>Option 9: <a href="#Advanced_Group">Deploy by Advanced Group</a></p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="Blue"><a name="User"></a>Option 1: Deploy to an Active Directory User</h3>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, select a printer object in the tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="4">Select <span class="Emphasis">Active Directory</span> &gt;&#160;<span class="Emphasis">User, Computer, or Group</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="516" src="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">In the Select Users, Computer, or Groups window, click <span class="Emphasis">Object Types</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_Users_Computers_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="469" data-mc-height="256" src="../../Images/Windows/Select_Users_Computers_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">In the Object Types window, click the <span class="Emphasis">Users</span> check box to select it.</li>
+                                                        <li value="7">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="8">In the Select Users, Computers, or Groups window, type either the whole or a partial name of the user in the <span class="Emphasis">Enter the object names to select</span> field.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_Users_Computers_Groups_Check.png"><img class="MCPopupThumbnail img" data-mc-width="469" data-mc-height="256" src="../../Images/Windows/Select_Users_Computers_Groups_Check_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">(Optional) Click <span class="Emphasis">Check Names</span>.</li>
+                                                        <li value="10">Select a name, as needed.</li>
+                                                        <li value="11">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="12">Click <span class="Emphasis">OK</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The name of the user will appear as a line item in the Deploy tab.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="13">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Computer"></a>Option 2: Deploy to an Active Directory Computer</h3>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, select a printer object in the tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="4">Select <span class="Emphasis">Active Directory</span> &gt;&#160;<span class="Emphasis">User, Computer, or Group</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="516" src="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">In the Select Users, Computer, or Groups window, click <span class="Emphasis">Object Types</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_Users_Computers_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="469" data-mc-height="256" src="../../Images/Windows/Select_Users_Computers_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">In the Object Types window, click the <span class="Emphasis">Computers</span> check box to select it.</li>
+                                                        <li value="7">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="8">In the <span class="Emphasis">Select Users, Computers, or Groups</span> window, type either the whole or a partial name of the computer in the <span class="Emphasis">Enter the object names to select</span> field.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_UCG_Check_Computer.png"><img class="MCPopupThumbnail img" data-mc-width="470" data-mc-height="257" src="../../Images/Windows/Select_UCG_Check_Computer_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">(Optional) Click <span class="Emphasis">Check Names</span>.</li>
+                                                        <li value="10">Select a name, as needed.</li>
+                                                        <li value="11">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="12">Click <span class="Emphasis">OK</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The name of the computer will appear as a line item in the Deploy tab.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="13">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Group"></a>Option 3: Deploy to an Active Directory Group</h3>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, select a printer object in the tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="4">Select <span class="Emphasis">Active Directory</span> &gt;&#160;<span class="Emphasis">User, Computer, or Group</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="516" src="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">In the Select Users, Computer, or Groups window, click <span class="Emphasis">Object Types</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_Users_Computers_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="469" data-mc-height="256" src="../../Images/Windows/Select_Users_Computers_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">In the Object Types window, click the <span class="Emphasis">Groups</span> check box to select it.</li>
+                                                        <li value="7">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="8">In the Select Users, Computers, or Groups window, type either the whole or a partial name of the group in the <span class="Emphasis">Enter the object names to select</span> field.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_UCG_Check_Group.png"><img class="MCPopupThumbnail img" data-mc-width="469" data-mc-height="255" src="../../Images/Windows/Select_UCG_Check_Group_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">(Optional) Click <span class="Emphasis">Check Names</span>.</li>
+                                                        <li value="10">Select a group, as needed.</li>
+                                                        <li value="11">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="12">Click <span class="Emphasis">OK</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The name of the group will appear as a line item in the Deploy tab.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="13">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Container"></a>Option 4: Deploy to an Active Directory Container</h3>
+                                                <div class="StepsIndent">
+                                                    <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the difference between a container and an organizational unit?</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>Organizational units (OU) differ from containers in that the OU can have a Group Policy Object (GPO) linked to it whereas the container cannot.</p>
+                                                        </div>
+                                                    </div>
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, select a printer object in the tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="4">Select <span class="Emphasis">Active Directory</span> &gt;&#160;<span class="Emphasis">Container or OU</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="516" src="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">When the Select Container(s) window appears, navigate to the container and click it to select it.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_Container.png"><img class="MCPopupThumbnail img" data-mc-width="442" data-mc-height="496" src="../../Images/Windows/Select_Container_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="7">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The name of the container will appear as a line item in the Deploy tab.</p>
+                                                </div>
+                                                <h3 class="Blue"><a name="OU"></a>Option 5: Deploy to an Active Directory Organizational Unit</h3>
+                                                <div class="StepsIndent">
+                                                    <div class="MCDropDown MCDropDown_Open dropDown dropDownfaq_short"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_faq_short MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the difference between a container and an organizational unit?</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>Organizational units (OU) differ from containers in that the OU can have a Group Policy Object (GPO) linked to it whereas the container cannot.</p>
+                                                        </div>
+                                                    </div>
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, select a printer object in the tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="4">Select <span class="Emphasis">Active Directory</span> &gt;&#160;<span class="Emphasis">Container or OU</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="516" src="../../Images/OnPrem/AC_Deploy_Tab_Users_Comp_Groups_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">When the Select Container(s) window appears, navigate to the organizational unit and click it to select it.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Windows/Select_OU.png"><img class="MCPopupThumbnail img" data-mc-width="440" data-mc-height="494" src="../../Images/Windows/Select_OU_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">Click <span class="Emphasis">OK</span>.</li>
+                                                        <li value="7">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                    <p class="indent">The name of the organizational unit will appear as a line item in the Deploy tab.</p>
+                                                </div>
+                                                <h3 class="Blue"><a name="IP_Address"></a>Option 6: Deploy to an IP Address Range Object</h3>
+                                                <h4 class="h4_Options">Step 1: Create an IP&#160;Address Range Object</h4>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console tree view, select the parent folder for the new IP address range object.</li>
+                                                        <li value="2">Click <span class="Emphasis">New</span> &gt; <span class="Emphasis">IP&#160;Address Range</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Tree_View_Add_IP_Range.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="526" src="../../Images/OnPrem/AC_Tree_View_Add_IP_Range_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Type the name of the new IP Address Range in the designated field.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_IP_Address_Range.png"><img class="MCPopupThumbnail img" data-mc-width="303" data-mc-height="212" src="../../Images/OnPrem/AC_IP_Address_Range_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Type the IP address that establishes the bottom of the range.</li>
+                                                        <li value="5">Type the IP address that establishes the top of the range.</li>
+                                                        <li value="6">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="7">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h4 class="h4_Options">Step 2: Set up your IP Address Range Deployment</h4>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console tree view, select a printer object.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                        <li value="3">Click <span class="Emphasis">Add</span> &gt;&#160;<span class="Emphasis">IP&#160;Address Range</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab_Add_IP_Range.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="525" src="../../Images/OnPrem/AC_Deploy_Tab_Add_IP_Range_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="StepsParagraph">You can either search for your IP&#160;address range by name or browse for it through the Admin Console tree view. Type in even a partial name of the range in the given field and then click <span class="Emphasis">Search</span>, or click <span class="Emphasis">Browse</span> and then navigate the Admin Console tree view to the IP address range object.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">When you find the IP address range you would like to use, select it and then click <span class="Emphasis">Add</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Add_IP Address_Range.png"><img class="MCPopupThumbnail img" data-mc-width="551" data-mc-height="421" src="../../Images/OnPrem/AC_Add_IP Address_Range_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">When the IP&#160;address appears as a deployment, click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Hostname"></a>Option 7: Deploy to a Hostname</h3>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">Select a printer object in the Admin Console tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span> &gt; <span class="Emphasis">Hostaname</span>.</li>
+                                                        <li value="4">Type the Hostname of the workstation.</li>
+                                                        <li value="5">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="6">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Mac_Address"></a>Option 8: Deploy to a Mac Address</h3>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">Select a printer object in the Admin Console tree view.</li>
+                                                        <li value="2">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Click <span class="Emphasis">Add</span> &gt; <span class="Emphasis">Mac Address</span>.</li>
+                                                        <li value="4">Type the Mac address of the workstation.</li>
+                                                        <li value="5">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="6">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <h3 class="Blue"><a name="Advanced_Group"></a>Option 9: Deploy to an Advanced Group</h3>
+                                                <p>For detailed information on this feature, see <a href="Advanced_Groups.htm">Advanced Groups</a>.</p>
+                                                <h4 class="h4_Options">Step 1: Set up your Advanced Group</h4>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">In the Admin Console, click <span class="Emphasis">Tools</span> &gt; <span class="Emphasis">Advanced Groups</span>.</li>
+                                                        <li value="2">When the Advanced Groups page appears, click <span class="Emphasis">Add</span>.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Advanced_Groups_Add.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="547" src="../../Images/OnPrem/AC_Advanced_Groups_Add_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">Type a name for the group and a description.</li>
+                                                        <li value="4">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">Printer Installer will display the new group with the settings ready to set up the first rule.</p>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Advanced_Groups_New_Rule.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="390" src="../../Images/OnPrem/AC_Advanced_Groups_New_Rule_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">In the Operation drop-down, select the type of operation for the rule.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">The operation determines whether the value will be included or excluded from the printer deployment. For example, select Contained In and then select an IP address range as the value to have the printer deployed to workstations in that range. Similarly, select <span class="Emphasis">Excluding</span> with the same IP address range as the value, and the printer will be deployed to workstations with IP addresses outside that IP address range.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">In the Value field, select the deployment type that you are including in or excluding from the rule.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">Using the example in the previous step, this field is where you would enter the IP address range after selecting <span class="Emphasis">Contained In</span> or <span class="Emphasis">Excluding</span> as the Operation. Depending on the value you select, a variety of options becomes available.</p>
+                                                    <p class="StepsParagraph">Any of the Active Directory options opens the Active Directory Object window that enables you to select an Active Directory user, group, and so on. Similarly, if you select IP address range, you will be able to select one of the IP address ranges from the ones that have been set up in the tree view. Selecting Hostname or MAC Address enables you to enter the specific values for either of those options.</p>
+                                                    <div class="indentstep">
+                                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadfaq"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="9" width="16" alt="Closed" data-mc-alt2="Open" />What is the Terminal Service Session option?</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The purposes of the Terminal Services Session option is to identify end-users who are working from a virtual desktop. As such, if the rule contains the Terminal Services Session option, the only end-users working from virtual machines will apply. See below.</p>
+                                                                <div class="ImgIndent">
+                                                                    <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Advanced_Groups_Term_Svc.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="541" src="../../Images/OnPrem/AC_Advanced_Groups_Term_Svc_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                                    </div>
+                                                                </div>
+                                                                <p>The reason for this option is that come printers might not work correctly in a virtual environment, so if you want to deploy a printer to everyone but those using a virtual machine, you can.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="7">When the selected value appears in the Value field, click <span class="Emphasis">Save</span>.</li>
+                                                        <li value="8">(Optional) If you have another value that you want to apply to the Advanced Group, click the Plus Sign icon to add a new rule.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">Add as many rules to your Advanced Group as you need. Just remember, the more rules you add, the more narrow the printer deployment will be. For example, a rule with an IP address range and an Active Directory group will deploy printers to a relatively narrow list of workstations, but if you add a third rule that uses Terminal Services Session, then the deployment will be even more narrow (perhaps too narrow) as it applies only to workstations that are connected over a virtual machine.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="9">Click <span class="Emphasis">Save</span> after adding each new rule to the Advanced Group.</li>
+                                                    </ol>
+                                                </div>
+                                                <h4 class="h4_Options">Step 2: Apply the Advanced Group to a Deployment</h4>
+                                                <div class="StepsIndent">
+                                                    <ol>
+                                                        <li value="1">Click <span class="Emphasis">Return to tree view</span> if you are not already in tree view mode.</li>
+                                                        <li value="2">Select a printer object in the Admin Console tree view.</li>
+                                                        <li value="3">Click the Deploy tab.</li>
+                                                    </ol>
+                                                    <div class="ImgIndent">
+                                                        <div class="thumbnailImg"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/OnPrem/AC_Deploy_Tab.png"><img class="MCPopupThumbnail img" data-mc-width="1095" data-mc-height="656" src="../../Images/OnPrem/AC_Deploy_Tab_thumb_250_0.png" style="mc-thumbnail: popup;" tabindex="" /></a>
+                                                        </div>
+                                                    </div>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">Click <span class="Emphasis">Add</span> &gt; <span class="Emphasis">Advanced Group</span>.</li>
+                                                    </ol>
+                                                    <p class="StepsParagraph">All available advanced groups will appear as options.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">Select an advanced group.</li>
+                                                        <li value="6">Click <span class="Emphasis">Add</span>.</li>
+                                                        <li value="7">Click <span class="Emphasis">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Mobile_Footer">
+                                    <p class="Mobile_Footer">Return to printerlogic.com</p>
+                                </div>
+                                <div class="backToTop">Back to Top</div>
+                                <script>
+			$(document).ready(function(){
+			
+			/*<![CDATA[*/
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			/*]]>*/
+
+
+			//on scroll, show the back to top button
+			$(window).scroll(function(){
+			if($(window).scrollTop() &gt;= 1){ //if user has scrolled the window
+			$('.backToTop').fadeIn(500); // show the back to top button
+			}else { // else if user is at the top already
+			$('.backToTop').fadeOut(500); //hide the back to top button
+			}
+			});
+
+			//scroll the page to the top if user clicks on the back to top button
+			$('.backToTop').click(function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+
+			//checks if page was already scrolled down before load
+			if($(window).scrollTop() &gt;= 1){
+			$('.backToTop').show(); // show the back to top button
+			}
+			
+		</script>
+                                <script>/*<![CDATA[*/function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}/*]]>*/</script>
+                                <script>/*<![CDATA[*/// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();/*]]>*/</script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+    <div class="Footer_Upper">
+        <div class="Top_Footer">
+            <div>
+                <p class="footerhead"><b>Printer</b>Logic</p>
+                <p class="footertext">Thousands of enterprises use PrinterLogic's patent pending printer and driver management platform to deliver Mobile, Pull and Virtual printing, while eliminating print servers and providing a self-service portal that empowers end users to install their own printers.</p>
+            </div>
+            <div>
+                <p class="footerhead">About Us</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Contact Us</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/news-releases/" target="_blank" class="FooterLinks">Newsroom</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/events/" class="FooterLinks" target="_blank">Events</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/careers/" target="_blank" class="FooterLinks">Careers</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Support</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/printer-installer/support/" target="_blank" class="FooterLinks">Technical</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/contact-us/" target="_blank" class="FooterLinks">Sales</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Partners</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partners/" target="_blank" class="FooterLinks">Our Partners</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/partner-log-in/" target="_blank" class="FooterLinks">Partner Login</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/become-a-partner/" target="_blank" class="FooterLinks">Become a Partner</a>
+                </p>
+            </div>
+            <div>
+                <p class="footerhead">Resource Center</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/" target="_blank" class="FooterLinks">Resource Center</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/blog/" target="_blank" class="FooterLinks">Blog</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/case-studies/" target="_blank" class="FooterLinks">Case Studies</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/white-papers/" target="_blank" class="FooterLinks">White Papers</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/videos/" target="_blank" class="FooterLinks">Videos</a>
+                </p>
+                <p class="footertext"><a href="https://www.printerlogic.com/resource-center/third-party-research/" target="_blank" class="FooterLinks">Third Party Research</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Footer_Lower">
+        <div class="Bottom_Footer">
+            <div>
+                <p class="footertext">PrinterLogic Global HQ</p>
+                <p class="footertext">912 West 1600 South</p>
+                <p class="footertext">St. George, Utah 84770</p>
+                <p class="footertext">USA</p>
+            </div>
+            <div>
+                <p class="footertext">PrinterLogic - Europe</p>
+                <p class="footertext">PrinterLogic GmbH</p>
+                <p class="footertext">Otto-von-Guericke-Ring 7</p>
+                <p class="footertext">65205 Wiesbaden</p>
+                <p class="footertext">Germany</p>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/PrinterLogicEnterprisePrinting" target="_blank"><i class="fa fa-facebook-official fa-lg" style="color:#3b5998" aria-hidden="true"></i></a><a href="https://twitter.com/PrinterLogic" target="_blank"><i class="fa fa-twitter-square fa-lg" style="color:#00abec" aria-hidden="true"></i></a><a href="https://www.instagram.com/printerlogic/" target="_blank"><i class="fa fa-instagram fa-lg" style="color:#3f729b" aria-hidden="true"></i></a><a href="https://plus.google.com/+Printerlogic" target="_blank"><i class="fa fa-google-plus-square fa-lg" style="color:#dd4a38" aria-hidden="true"></i></a><a href="https://www.youtube.com/c/Printerlogic" target="_blank"><i class="fa fa-youtube-play fa-lg" style="color:#ba0000" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company-beta/3505000/" target="_blank"><i class="fa fa-linkedin-square fa-lg" style="color:#006e9e" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class="footertext">© 2017 PrinterLogic. All Rights Reserved</p>
+                <p class="footertext"><a href="https://www.printerlogic.com/privacy-policy/" target="_blank" class="FooterLinks">Privacy</a> | <a href="https://www.printerlogic.com/sitemap/" target="_blank" class="FooterLinks">Sitemap</a></p>
+            </div>
+        </div>
+    </div>
+</html>

@@ -1,0 +1,2440 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* Home Page General Styles*/
+
+body
+{
+	font-family: Arial;
+	line-height: 1.5em;
+}
+
+a.BlackText
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+h1
+{
+	font-size: 2.75em;
+}
+
+h2
+{
+	font-size: 1.6785em;
+}
+
+h2.SubCenter
+{
+	text-align: center;
+	margin-bottom: 1.2em;
+	color: #305da9;
+	padding-top: 12px;
+}
+
+img.Hyperlinked
+{
+	border-style: none;
+}
+
+img.Slideshow
+{
+	border-style: none;
+	margin-bottom: 15px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	color: #000000;
+}
+
+p.ToDoHeader
+{
+	font-size: 30px;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+p.ToDoList
+{
+	font-size: 16pt;
+	padding-left: 50px;
+}
+
+p.PDFGuidesHeader
+{
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+p.Copyright
+{
+	font-size: 0.9em;
+	text-align: left;
+	color: #888888;
+	line-height: 1.6em;
+	margin: 0 0 10px 0;
+}
+
+.centered-text
+{
+	text-align: center;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.whiteheader
+{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.inner-wrap .tab-bar .nav-search
+{
+	display: none;
+}
+
+.inner-wrap .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/* Video Lightbox Styles */
+
+.basicLightbox
+{
+	position: fixed;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,.8);
+	opacity: .01;
+	-webkit-transition: opacity .4s ease;
+	transition: opacity .4s ease;
+	z-index: 1000;
+	will-change: opacity;
+}
+
+.basicLightbox--visible
+{
+	opacity: 1;
+}
+
+.basicLightbox__placeholder
+{
+	max-width: 100%;
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
+	-webkit-transition: -webkit-transform .4s ease;
+	transition: transform .4s ease;
+	transition: transform .4s ease, -webkit-transform .4s ease;
+	z-index: 1;
+	will-change: transform;
+}
+
+.basicLightbox__placeholder > iframe:first-child:last-child,
+.basicLightbox__placeholder > img:first-child:last-child,
+.basicLightbox__placeholder > video:first-child:last-child
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	max-width: 95%;
+	max-height: 95%;
+}
+
+.basicLightbox__placeholder > img:first-child:last-child,
+.basicLightbox__placeholder > video:first-child:last-child
+{
+	width: auto;
+	height: auto;
+}
+
+.basicLightbox__placeholder > [data-basicLightbox]
+{
+	display: block !important;
+}
+
+.basicLightbox--iframe .basicLightbox__placeholder,
+.basicLightbox--img .basicLightbox__placeholder,
+.basicLightbox--video .basicLightbox__placeholder
+{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.basicLightbox--visible .basicLightbox__placeholder
+{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+[data-basicLightbox]
+{
+	display: none !important;
+}
+
+.basicLightbox__placeholder
+{
+	height: 0 !important;
+	padding-bottom: 56.25%;
+}
+
+.basicLightbox__placeholder iframe
+{
+	width: 100%;
+	height: 100%;
+	pointer-events: initial;
+}
+
+.HomeVideoSection img
+{
+	width: 100%;
+	padding: 0;
+	cursor: pointer;
+}
+
+/* Home Page Button Styles */
+
+.button
+{
+	cursor: pointer;
+	background-color: transparent;
+	width: 200px;
+	height: 35px;
+	font-weight: bold;
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.button.black
+{
+	border: solid 2px black;
+	color: black;
+}
+
+.button.black:hover
+{
+	background-color: #ccc;
+}
+
+.button a
+{
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/* Responsive Header Styles*/
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/* Content Section */
+
+#content-section
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #e6e6e6;
+	margin-top: -50px;
+}
+
+#content-section h2
+{
+	font-weight: normal;
+}
+
+.right-section div.button-group,
+.left-section div.button-group
+{
+	margin-top: 20px;
+}
+
+#content-section .left-section
+{
+	padding-right: 20px;
+}
+
+#content-section .right-section
+{
+	padding-left: 20px;
+}
+
+.left-section .left-content,
+.right-section .right-content
+{
+	height: 270px;
+}
+
+#content-section .right-section .table-images:first-of-type
+{
+	margin-bottom: 20px;
+}
+
+#content-section.mc-blurb p
+{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#content-section.mc-blurb .mc-bullets
+{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+#content-section.mc-blurb .mc-bullets > li
+{
+	color: #5a5a5a;
+	list-style-image: url('../Images/Bullet1.png');
+	font-size: 14px;
+	margin-top: 8px;
+	line-height: 1.6em;
+}
+
+/* Home Page Topic Hero section*/
+
+div.topichero
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+	height: 100px;
+	padding-bottom: 200px;
+	background-image: url('../Images/docubacker.png');
+}
+
+div.topichero h1
+{
+	font-size: 3.6em;
+	margin-top: 1.11em;
+	margin-bottom: 0.5em;
+	line-height: 100%;
+}
+
+div.topichero h2
+{
+	font-size: 1.8em;
+	margin-bottom: 80px;
+	line-height: 100%;
+}
+
+.search,
+.search-bar
+{
+	margin: 0 auto;
+}
+
+/* Home Page slide show */
+
+div.slidingshow
+{
+	margin-top: -79px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+}
+
+.mc-wrapper .mc-caption
+{
+	background: none;
+}
+
+/* Home Page Video Section */
+
+.video-section
+{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	background-color: #f2f2f2;
+}
+
+.video-section img
+{
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.video-wrapper
+{
+	/* 16:9 */
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Home Page Footer */
+
+div.footer_top
+{
+	height: 300px;
+	width: 100%;
+	background-color: #5d5c5d;
+}
+
+div.footer_bottom
+{
+	height: 200px;
+	width: 100%;
+	background-color: #2a292a;
+}
+
+div.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+div.footer > div.outer-row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+}
+
+.footer-links
+{
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+.footer-icons > a:first-of-type
+{
+	padding-right: 10px;
+}
+
+p.footerhead
+{
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+p.footertext
+{
+	color: #fff;
+	font-size: 14px;
+}
+
+/* Mad Cap proxy/editor assigned styles */
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+p.TOC2
+{
+	margin-left: 20px;
+	display: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|slideshow
+{
+	border-style: none;
+	box-shadow: none;
+}
+
+MadCap|slideshowCaption
+{
+	background: none;
+	color: #000000;
+	padding: 0;
+	padding-top: 0;
+}
+
+html.HomePage
+{
+	mc-community-features: disabled;
+}
+
+div.HomeHeroSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeHeroSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeHeroSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeHeroSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeHeroSection > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomeSlideSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 130px;
+	padding-left: 130px;
+	padding-top: 20px;
+}
+
+div.HomeWelcomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(1)
+{
+	padding-left: 120px;
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomeButtons	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomeButtons::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomeButtons::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomeButtons > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomeButtons > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomeWelcomeButtons > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+div.HomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomePDFSection > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.HomePDFSection > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.HomePDFSection > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.HomePDFButton	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFButton::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFButton::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFButton > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomePDFButton > div:nth-child(1)
+{
+	width: 50%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooter	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeMasterPageFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeMasterPageFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeMasterPageFooter > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.HomeVideoSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeVideoSection::before
+{
+	content: ' ';
+	display: table;
+	background-image: url('../Images/training_driver.png');
+}
+
+div.HomeVideoSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeVideoSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomeVideoSection > div:nth-child(1)
+{
+	width: 33.33333%;
+}
+
+div.HomeVideoSection > div:nth-child(2)
+{
+	width: 33.33333%;
+}
+
+div.HomeVideoSection > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+div.PDFGuides	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+}
+
+div.PDFGuides::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.PDFGuides::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.PDFGuides > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.PDFGuides > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.PDFGuides > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.PDFGuides > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.ToDo	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+}
+
+div.ToDo::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ToDo::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ToDo > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.ToDo > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.ToDo > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.PDF	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.PDF::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.PDF::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.PDF > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.PDF > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.PDF > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.PDF > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.HomePDFSection > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.PDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 27px;
+	width: 65%;
+}
+
+div.PDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.PDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.PDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+div.PDFSection > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.PDFSection > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.PDFSection > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.PDFSection > div:nth-child(4)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeHeroSection > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeHeroSection > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeHeroSection > div:nth-child(4)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper_Text::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Footer_Upper_Text::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Footer_Upper_Text > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Footer_Upper_Text > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper_Text > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper_Text > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper_Text > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper_Text > div:nth-child(5)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Footer_Lower::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Footer_Lower::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Footer_Lower > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Footer_Lower > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Footer_Lower > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Lower > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Lower_Text::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Footer_Lower_Text::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Footer_Lower_Text > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Footer_Lower_Text > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Lower_Text > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Lower_Text > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Footer_Upper::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Footer_Upper > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Footer_Upper > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Footer_Upper > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Top_Footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 20px;
+}
+
+div.Top_Footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Top_Footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Top_Footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Top_Footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+	padding-right: 60px;
+}
+
+div.Top_Footer > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Top_Footer > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Bottom_Footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: 10%;
+	margin-right: 15%;
+	padding-top: 20px;
+}
+
+div.Bottom_Footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Bottom_Footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Bottom_Footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Bottom_Footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Bottom_Footer > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Bottom_Footer > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Top_Footer > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Top_Footer > div:nth-child(5)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Bottom_Footer > div:nth-child(4)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Footer_Mobile
+{
+	display: none;
+}
+
+a.FooterLinks
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.FooterLinks:visited
+{
+	
+}
+
+a.FooterLinks:hover
+{
+	text-decoration: underline;
+}
+
+div.Mobile_Footer
+{
+	display: none;
+	width: 100%;
+	border-top: solid 2px #f58033;
+	height: 40px;
+	margin-top: 30px;
+}
+
+p.Mobile_Footer
+{
+	display: none;
+	padding-right: 20px;
+	text-align: right;
+}
+
+div.Footer_Upper
+{
+	display: block;
+}
+
+div.Footer_Lower
+{
+	display: block;
+}
+
+div.What_Is	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -60px;
+	width: 60%;
+}
+
+div.What_Is::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.What_Is::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.What_Is > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+div.What_Is > div:nth-child(1)
+{
+	margin-left: 0%;
+	width: 15.667%;
+}
+
+div.What_Is > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.What_Is > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.What_Is > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.What_Is > div:nth-child(5)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.What_Is > div:nth-child(6)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+MadCap|tocProxy
+{
+	
+}
+
+/* Medium Layout */
+
+@media only screen and (max-width: 1279px)
+{
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+	div.Footer_Mobile
+	{
+		width: 100%;
+		display: block;
+		height: 0.5in;
+		background-color: #f58033;
+	}
+
+	div.slidingshow
+	{
+		width: 100%;
+	}
+
+	.left-section div.button-group > div
+	{
+		margin-bottom: 20px;
+	}
+
+	div.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(1)
+	{
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(2)
+	{
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomePDFSection > div:nth-child(1)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSection > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSection > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFButton > div:nth-child(1)
+	{
+		width: 50%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomeVideoSection > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+
+	div.PDFGuides > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.PDFGuides > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.PDFGuides > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.ToDo > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.ToDo > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.PDF > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.PDF > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.PDF > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(1)
+	{
+		width: 16.667%;
+		margin-left: 16.667%;
+	}
+
+	div.PDFSection > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(3)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(4)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.HomeHeroSection > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeHeroSection > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeHeroSection > div:nth-child(4)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(4)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(5)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower_Text > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower_Text > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower_Text > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(1)
+	{
+		padding-right: 60px;
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(3)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(4)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(5)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(4)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer
+	{
+		display: none;
+	}
+
+	div.Bottom_Footer
+	{
+		display: none;
+	}
+
+	div.footer_top
+	{
+		dsplay: None;
+		display: none;
+	}
+
+	div.footer_bottom
+	{
+		display: none;
+	}
+
+	div.Mobile_Footer
+	{
+		display: block;
+		width: 100%;
+		height: 40px;
+	}
+
+	p.Mobile_Footer
+	{
+		color: #5a5a5a;
+		margin-bottom: 8px;
+		margin-top: 8px;
+		text-align: right;
+		padding-right: 20px;
+		display: block;
+	}
+
+	div.Footer_Upper
+	{
+		display: none;
+	}
+
+	div.Footer_Lower
+	{
+		display: none;
+	}
+
+	div.What_Is > div:nth-child(1)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(3)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(4)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(5)
+	{
+		width: 16.667%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(6)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	img.what_is
+	{
+		padding: 10px;
+		width: 82%;
+	}
+
+	img.pdf_icons
+	{
+		height: 150px;
+	}
+
+	div.PDFSection
+	{
+		width: 134%;
+	}
+}
+
+/* Small Layout */
+
+@media only screen and (max-width: 767px)
+{
+	div.Footer_Mobile
+	{
+		width: 100%;
+		display: block;
+		height: 0.5in;
+		background-color: #f58033;
+	}
+
+	MadCap|searchBarProxy.homeSearchBar
+	{
+		width: 100%;
+	}
+
+	.left-content
+	{
+		margin-bottom: 60px;
+	}
+
+	div.topichero h1
+	{
+		font-size: 2em;
+	}
+
+	div.topichero h2
+	{
+		font-size: 1.2em;
+	}
+
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.video-section
+	{
+		padding-top: 30px;
+	}
+
+	.video-section .columns
+	{
+		padding: 0;
+	}
+
+	.footer-links,
+	p.Copyright,
+	.footer-icons
+	{
+		text-align: center;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(1)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(2)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomePDFSection > div:nth-child(1)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(2)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(3)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFButton > div:nth-child(1)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 100%;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDFGuides > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDFGuides > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDFGuides > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.ToDo > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.ToDo > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDF > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDF > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDF > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	MadCap|searchBarProxy
+	{
+		
+	}
+
+	div.HomePDFSection > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.PDFSection > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.HomeHeroSection > div:nth-child(2)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.HomeHeroSection > div:nth-child(3)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.HomeHeroSection > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper_Text > div:nth-child(5)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower_Text > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower_Text > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Lower_Text > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer_Upper > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Top_Footer > div:nth-child(5)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Bottom_Footer > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	a.FooterLinks:hover
+	{
+		text-decoration: underline;
+	}
+
+	a.White
+	{
+		
+	}
+
+	a.FooterLinks
+	{
+		color: #ffffff;
+	}
+
+	div.Bottom_Footer
+	{
+		display: none;
+	}
+
+	div.Top_Footer
+	{
+		display: none;
+	}
+
+	div.footer_top
+	{
+		dsplay: None;
+		display: none;
+	}
+
+	div.footer_bottom
+	{
+		display: none;
+	}
+
+	div.HomeHeroSection
+	{
+		display: none;
+	}
+
+	div.Mobile_Footer
+	{
+		display: block;
+		width: 100%;
+		height: 40px;
+	}
+
+	p.Mobile_Footer
+	{
+		display: block;
+	}
+
+	div.Footer_Upper
+	{
+		display: none;
+	}
+
+	div.Footer_Lower
+	{
+		display: none;
+	}
+
+	div.What_Is > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(5)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.What_Is > div:nth-child(6)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	a.BlackText:visited
+	{
+		
+	}
+
+	a.BlackText:hover
+	{
+		
+	}
+
+	a.BlackText:active
+	{
+		
+	}
+}
+
+.fa
+{
+	margin-right: 20px;
+	background-color: transparent;
+}
+
+.PDF_Home_Section
+{
+	background-color: red;
+}
+
+div.PDF_Home_Section
+{
+	padding-top: 20px;
+	background-color: #cccccc;
+}
+
+img.what_is
+{
+	padding: 10px;
+	border: none 1px #305da9;
+	height: auto;
+	width: 75%;
+}
+
+img.pdf_icons
+{
+	height: 200px;
+}
+
+p.Doc_Portal_Text
+{
+	color: #ffffff;
+	font-size: 54px;
+	text-align: center;
+}
+
+p.Doc_Portal_Subtext
+{
+	text-align: center;
+	color: #cccccc;
+	font-size: 22px;
+	padding-top: 16px;
+}
+
